@@ -473,4 +473,26 @@ Wire Wire Line
 	9600 4550 9600 4650
 Wire Wire Line
 	9100 4550 9600 4550
+$Comp
+L Board_Hardware:MountingScrew_M3_Flathead H1
+U 1 1 6030CCDB
+P 1450 6300
+F 0 "H1" H 1527 6300 50  0000 L CNN
+F 1 "MountingScrew_M3_Flathead" H 1450 6200 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1450 6100 50  0001 C CNN
+F 3 "" H 1450 6300 50  0001 C CNN
+	1    1450 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Board_Hardware:MountingScrew_M3_Flathead H2
+U 1 1 6030CFC1
+P 1450 6450
+F 0 "H2" H 1527 6450 50  0000 L CNN
+F 1 "MountingScrew_M3_Flathead" H 1450 6350 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1450 6250 50  0001 C CNN
+F 3 "" H 1450 6450 50  0001 C CNN
+	1    1450 6450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
