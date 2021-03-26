@@ -1,0 +1,203 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:LM13700 U?
+U 1 1 6089DE56
+P 2350 3700
+F 0 "U?" H 2350 3333 50  0000 C CNN
+F 1 "LM13700" H 2350 3424 50  0000 C CNN
+F 2 "" H 2050 3725 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm13700.pdf" H 2050 3725 50  0001 C CNN
+	1    2350 3700
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:LM13700 U?
+U 1 1 608A1C1E
+P 3850 3700
+F 0 "U?" H 3850 3333 50  0000 C CNN
+F 1 "LM13700" H 3850 3424 50  0000 C CNN
+F 2 "" H 3550 3725 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm13700.pdf" H 3550 3725 50  0001 C CNN
+	1    3850 3700
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 608A2BEE
+P 2850 4000
+F 0 "C?" H 2965 4046 50  0000 L CNN
+F 1 "C" H 2965 3955 50  0000 L CNN
+F 2 "" H 2888 3850 50  0001 C CNN
+F 3 "~" H 2850 4000 50  0001 C CNN
+	1    2850 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 608A40AA
+P 4300 4000
+F 0 "C?" H 4415 4046 50  0000 L CNN
+F 1 "C" H 4415 3955 50  0000 L CNN
+F 2 "" H 4338 3850 50  0001 C CNN
+F 3 "~" H 4300 4000 50  0001 C CNN
+	1    4300 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM13700 U?
+U 1 1 608A4B05
+P 2700 2800
+F 0 "U?" H 2700 2433 50  0000 C CNN
+F 1 "LM13700" H 2700 2524 50  0000 C CNN
+F 2 "" H 2400 2825 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm13700.pdf" H 2400 2825 50  0001 C CNN
+	1    2700 2800
+	1    0    0    1   
+$EndComp
+Text Label 1750 3600 0    50   ~ 0
+Vin
+Wire Wire Line
+	1750 3600 2050 3600
+$Comp
+L power:GND #PWR?
+U 1 1 608AE872
+P 2850 4250
+F 0 "#PWR?" H 2850 4000 50  0001 C CNN
+F 1 "GND" H 2855 4077 50  0000 C CNN
+F 2 "" H 2850 4250 50  0001 C CNN
+F 3 "" H 2850 4250 50  0001 C CNN
+	1    2850 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 608AEE6D
+P 4300 4250
+F 0 "#PWR?" H 4300 4000 50  0001 C CNN
+F 1 "GND" H 4305 4077 50  0000 C CNN
+F 2 "" H 4300 4250 50  0001 C CNN
+F 3 "" H 4300 4250 50  0001 C CNN
+	1    4300 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 3700 3150 3600
+Wire Wire Line
+	3150 3600 3550 3600
+$Comp
+L power:GND #PWR?
+U 1 1 608B0861
+P 3450 3900
+F 0 "#PWR?" H 3450 3650 50  0001 C CNN
+F 1 "GND" H 3455 3727 50  0000 C CNN
+F 2 "" H 3450 3900 50  0001 C CNN
+F 3 "" H 3450 3900 50  0001 C CNN
+	1    3450 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3800 3450 3800
+Wire Wire Line
+	3450 3800 3450 3900
+Wire Wire Line
+	1900 3800 2050 3800
+Wire Wire Line
+	3000 2800 3150 2800
+Wire Wire Line
+	3150 2800 3150 3100
+Wire Wire Line
+	2400 2900 2300 2900
+Wire Wire Line
+	2300 2900 2300 3100
+Wire Wire Line
+	2300 3100 3150 3100
+Connection ~ 3150 3100
+Wire Wire Line
+	3150 3100 3150 3200
+$Comp
+L power:GND #PWR?
+U 1 1 608B2390
+P 2100 2800
+F 0 "#PWR?" H 2100 2550 50  0001 C CNN
+F 1 "GND" H 2105 2627 50  0000 C CNN
+F 2 "" H 2100 2800 50  0001 C CNN
+F 3 "" H 2100 2800 50  0001 C CNN
+	1    2100 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2700 2100 2700
+Wire Wire Line
+	2100 2700 2100 2800
+Text Label 3300 3200 0    50   ~ 0
+Vbp
+Text Label 4500 3500 0    50   ~ 0
+Vlp
+Wire Wire Line
+	4500 3500 4500 3700
+Wire Wire Line
+	3300 3200 3150 3200
+Text Label 3150 2600 0    50   ~ 0
+Q
+Text Label 2800 3500 0    50   ~ 0
+F
+Text Label 4300 3500 0    50   ~ 0
+F
+Wire Wire Line
+	3000 2700 3150 2700
+Wire Wire Line
+	3150 2700 3150 2600
+Wire Wire Line
+	2650 3600 2800 3600
+Wire Wire Line
+	2800 3600 2800 3500
+Wire Wire Line
+	4150 3600 4300 3600
+Wire Wire Line
+	4300 3600 4300 3500
+Wire Wire Line
+	2650 3700 2850 3700
+Wire Wire Line
+	4150 3700 4300 3700
+Wire Wire Line
+	4300 3850 4300 3700
+Wire Wire Line
+	2850 3850 2850 3700
+Connection ~ 2850 3700
+Wire Wire Line
+	2850 3700 3150 3700
+Wire Wire Line
+	4300 3700 4500 3700
+Connection ~ 4300 3700
+Wire Wire Line
+	4500 3700 4650 3700
+Wire Wire Line
+	4650 3700 4650 4550
+Connection ~ 4500 3700
+Wire Wire Line
+	3150 3200 3150 3600
+Connection ~ 3150 3200
+Connection ~ 3150 3600
+Wire Wire Line
+	4300 4150 4300 4250
+Wire Wire Line
+	2850 4150 2850 4250
+Wire Wire Line
+	1900 4550 1900 3800
+Wire Wire Line
+	1900 4550 4650 4550
+$EndSCHEMATC
