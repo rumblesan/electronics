@@ -1,0 +1,254 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:LM13700 U?
+U 1 1 608F0C02
+P 3600 3200
+F 0 "U?" H 3600 2833 50  0001 C CNN
+F 1 "LM13700" H 3600 2925 50  0001 C CNN
+F 2 "" H 3300 3225 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm13700.pdf" H 3300 3225 50  0001 C CNN
+	1    3600 3200
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:LM13700 U?
+U 1 1 608F0C08
+P 5100 3200
+F 0 "U?" H 5100 2833 50  0001 C CNN
+F 1 "LM13700" H 5100 2925 50  0001 C CNN
+F 2 "" H 4800 3225 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm13700.pdf" H 4800 3225 50  0001 C CNN
+	1    5100 3200
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 608F0C0E
+P 4100 3500
+F 0 "C?" H 4215 3546 50  0001 L CNN
+F 1 "C" H 4215 3500 50  0000 L CNN
+F 2 "" H 4138 3350 50  0001 C CNN
+F 3 "~" H 4100 3500 50  0001 C CNN
+	1    4100 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 608F0C14
+P 5550 3500
+F 0 "C?" H 5665 3546 50  0001 L CNN
+F 1 "C" H 5665 3500 50  0000 L CNN
+F 2 "" H 5588 3350 50  0001 C CNN
+F 3 "~" H 5550 3500 50  0001 C CNN
+	1    5550 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM13700 U?
+U 1 1 608F0C1A
+P 3950 2450
+F 0 "U?" H 3950 2083 50  0001 C CNN
+F 1 "LM13700" H 3950 2175 50  0001 C CNN
+F 2 "" H 3650 2475 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm13700.pdf" H 3650 2475 50  0001 C CNN
+	1    3950 2450
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 608F0C20
+P 4100 3750
+F 0 "#PWR?" H 4100 3500 50  0001 C CNN
+F 1 "GND" H 4105 3577 50  0000 C CNN
+F 2 "" H 4100 3750 50  0001 C CNN
+F 3 "" H 4100 3750 50  0001 C CNN
+	1    4100 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 608F0C26
+P 5550 3750
+F 0 "#PWR?" H 5550 3500 50  0001 C CNN
+F 1 "GND" H 5555 3577 50  0000 C CNN
+F 2 "" H 5550 3750 50  0001 C CNN
+F 3 "" H 5550 3750 50  0001 C CNN
+	1    5550 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 3200 4400 3100
+Wire Wire Line
+	4400 3100 4800 3100
+$Comp
+L power:GND #PWR?
+U 1 1 608F0C2E
+P 4700 3400
+F 0 "#PWR?" H 4700 3150 50  0001 C CNN
+F 1 "GND" H 4705 3227 50  0000 C CNN
+F 2 "" H 4700 3400 50  0001 C CNN
+F 3 "" H 4700 3400 50  0001 C CNN
+	1    4700 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3300 4700 3300
+Wire Wire Line
+	4700 3300 4700 3400
+Wire Wire Line
+	3150 3300 3300 3300
+Wire Wire Line
+	4250 2450 4400 2450
+Wire Wire Line
+	4400 2450 4400 2750
+Wire Wire Line
+	3650 2550 3550 2550
+Wire Wire Line
+	3550 2550 3550 2750
+Wire Wire Line
+	3550 2750 4400 2750
+Connection ~ 4400 2750
+Wire Wire Line
+	4400 2750 4400 2850
+Text Label 4550 2850 0    50   ~ 0
+Vbp
+Text Label 5750 3000 0    50   ~ 0
+Vlp
+Wire Wire Line
+	5750 3000 5750 3200
+Wire Wire Line
+	4550 2850 4400 2850
+Text Label 4400 2250 0    50   ~ 0
+Q
+Text Label 4050 3000 0    50   ~ 0
+F
+Text Label 5550 3000 0    50   ~ 0
+F
+Wire Wire Line
+	4250 2350 4400 2350
+Wire Wire Line
+	4400 2350 4400 2250
+Wire Wire Line
+	3900 3100 4050 3100
+Wire Wire Line
+	4050 3100 4050 3000
+Wire Wire Line
+	5400 3100 5550 3100
+Wire Wire Line
+	5550 3100 5550 3000
+Wire Wire Line
+	3900 3200 4100 3200
+Wire Wire Line
+	5400 3200 5550 3200
+Wire Wire Line
+	5550 3350 5550 3200
+Wire Wire Line
+	4100 3350 4100 3200
+Connection ~ 4100 3200
+Wire Wire Line
+	4100 3200 4400 3200
+Wire Wire Line
+	5550 3200 5750 3200
+Connection ~ 5550 3200
+Wire Wire Line
+	5750 3200 5900 3200
+Wire Wire Line
+	5900 3200 5900 4050
+Connection ~ 5750 3200
+Wire Wire Line
+	5550 3650 5550 3750
+Wire Wire Line
+	4100 3650 4100 3750
+Wire Wire Line
+	3150 4050 3150 3300
+Wire Wire Line
+	3150 4050 5900 4050
+Wire Wire Line
+	4400 2850 4400 3100
+Connection ~ 4400 2850
+Connection ~ 4400 3100
+Text Label 2800 2850 0    50   ~ 0
+Vin
+$Comp
+L Device:R_POT b?
+U 1 1 608F0C5E
+P 2800 3100
+F 0 "b?" H 2731 3100 50  0000 R CNN
+F 1 "R_POT" H 2731 3055 50  0001 R CNN
+F 2 "" H 2800 3100 50  0001 C CNN
+F 3 "~" H 2800 3100 50  0001 C CNN
+	1    2800 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 608F0C64
+P 2800 3350
+F 0 "#PWR?" H 2800 3100 50  0001 C CNN
+F 1 "GND" H 2805 3177 50  0000 C CNN
+F 2 "" H 2800 3350 50  0001 C CNN
+F 3 "" H 2800 3350 50  0001 C CNN
+	1    2800 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2850 2800 2950
+Wire Wire Line
+	2800 3250 2800 3350
+Text Label 3200 2100 0    50   ~ 0
+Vin
+$Comp
+L Device:R_POT a?
+U 1 1 608F0C6D
+P 3200 2350
+F 0 "a?" H 3131 2350 50  0000 R CNN
+F 1 "R_POT" H 3131 2305 50  0001 R CNN
+F 2 "" H 3200 2350 50  0001 C CNN
+F 3 "~" H 3200 2350 50  0001 C CNN
+	1    3200 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 608F0C73
+P 3200 2600
+F 0 "#PWR?" H 3200 2350 50  0001 C CNN
+F 1 "GND" H 3205 2427 50  0000 C CNN
+F 2 "" H 3200 2600 50  0001 C CNN
+F 3 "" H 3200 2600 50  0001 C CNN
+	1    3200 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 2100 3200 2200
+Wire Wire Line
+	3200 2500 3200 2600
+Wire Wire Line
+	3650 2350 3350 2350
+Wire Wire Line
+	3300 3100 2950 3100
+Text Notes 3750 3300 0    50   ~ 0
+i1 ->
+Text Notes 5250 3300 0    50   ~ 0
+i2 ->
+Text Notes 4100 2550 0    50   ~ 0
+iq ->
+Text Notes 2850 2250 0    50   ~ 0
+Variable\nGain
+Text Notes 2950 3000 0    50   ~ 0
+Fixed\nGain
+$EndSCHEMATC
