@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name cgs348-vco-output-buffer-rescue)(type Legacy)(uri ${KIPRJMOD}/cgs348-vco-output-buffer-rescue.lib)(options "")(descr ""))
+)
