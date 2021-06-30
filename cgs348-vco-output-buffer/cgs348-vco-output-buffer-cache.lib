@@ -38,18 +38,6 @@ X V+ 4 -100 300 150 D 50 50 5 1 W
 ENDDRAW
 ENDDEF
 #
-# Board_Hardware_Logo_Ammonite-simple
-#
-DEF Board_Hardware_Logo_Ammonite-simple H 0 0 N N 1 F N
-F0 "H" 0 50 50 H I C CNN
-F1 "Board_Hardware_Logo_Ammonite-simple" -50 -50 50 H V C CNN
-F2 "rumblesan-footprints:Logo_Ammonite-simple" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-C 0 0 0 0 1 0 N
-ENDDRAW
-ENDDEF
-#
 # Board_Hardware_MountingScrew_M3_Flathead
 #
 DEF Board_Hardware_MountingScrew_M3_Flathead H 0 0 N N 1 F N
