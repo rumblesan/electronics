@@ -113,17 +113,6 @@ F 3 "~" H 5750 3650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R7
-U 1 1 600D8EAF
-P 6400 3150
-F 0 "R7" V 6193 3150 50  0000 C CNN
-F 1 "100k" V 6284 3150 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6330 3150 50  0001 C CNN
-F 3 "~" H 6400 3150 50  0001 C CNN
-	1    6400 3150
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:R R8
 U 1 1 600D9972
 P 7200 3750
@@ -315,16 +304,12 @@ Wire Wire Line
 	6000 2650 6000 3650
 Connection ~ 6000 3650
 Wire Wire Line
-	6250 3150 6200 3150
-Wire Wire Line
-	6200 3150 6200 3650
-Wire Wire Line
 	6000 3650 6200 3650
 Connection ~ 6200 3650
 Wire Wire Line
 	6200 3650 6250 3650
 Wire Wire Line
-	6850 3750 7050 3750
+	6850 3750 6950 3750
 Wire Wire Line
 	7100 4450 7100 4600
 Wire Wire Line
@@ -347,10 +332,6 @@ F 3 "~" H 8050 2400 50  0001 C CNN
 	1    8050 2400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6550 3150 7450 3150
-Wire Wire Line
-	7450 3150 7450 3750
 Wire Wire Line
 	8250 2400 8350 2400
 Wire Wire Line
@@ -378,7 +359,6 @@ Wire Wire Line
 	8400 2000 8650 2000
 Wire Wire Line
 	8350 2400 8650 2400
-Connection ~ 8650 2400
 Wire Wire Line
 	8650 2900 8650 3000
 Wire Wire Line
@@ -403,28 +383,6 @@ F 1 "+12V" H 8665 2023 50  0000 C CNN
 F 2 "" H 8650 1850 50  0001 C CNN
 F 3 "" H 8650 1850 50  0001 C CNN
 	1    8650 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C 100n2
-U 1 1 600DB516
-P 8650 2750
-F 0 "100n2" H 8765 2796 50  0000 L CNN
-F 1 "C" H 8765 2705 50  0000 L CNN
-F 2 "Capacitor_THT:C_Rect_L7.0mm_W3.5mm_P5.00mm" H 8688 2600 50  0001 C CNN
-F 3 "~" H 8650 2750 50  0001 C CNN
-	1    8650 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C 100n1
-U 1 1 600DAE96
-P 8650 2250
-F 0 "100n1" H 8765 2296 50  0000 L CNN
-F 1 "C" H 8765 2205 50  0000 L CNN
-F 2 "Capacitor_THT:C_Rect_L7.0mm_W3.5mm_P5.00mm" H 8688 2100 50  0001 C CNN
-F 3 "~" H 8650 2250 50  0001 C CNN
-	1    8650 2250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -477,7 +435,7 @@ $Comp
 L Board_Hardware:MountingScrew_M3_Flathead H1
 U 1 1 6030CCDB
 P 1450 6300
-F 0 "H1" H 1527 6300 50  0000 L CNN
+F 0 "H1" H 1527 6300 50  0001 L CNN
 F 1 "MountingScrew_M3_Flathead" H 1450 6200 50  0001 C CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 1450 6100 50  0001 C CNN
 F 3 "" H 1450 6300 50  0001 C CNN
@@ -488,11 +446,97 @@ $Comp
 L Board_Hardware:MountingScrew_M3_Flathead H2
 U 1 1 6030CFC1
 P 1450 6450
-F 0 "H2" H 1527 6450 50  0000 L CNN
+F 0 "H2" H 1527 6450 50  0001 L CNN
 F 1 "MountingScrew_M3_Flathead" H 1450 6350 50  0001 C CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 1450 6250 50  0001 C CNN
 F 3 "" H 1450 6450 50  0001 C CNN
 	1    1450 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 60E36C29
+P 4950 2600
+F 0 "C1" V 4698 2600 50  0000 C CNN
+F 1 "47pF" V 4789 2600 50  0000 C CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W3.5mm_P5.00mm" H 4988 2450 50  0001 C CNN
+F 3 "~" H 4950 2600 50  0001 C CNN
+	1    4950 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 60E3A0A1
+P 6500 3100
+F 0 "C2" V 6248 3100 50  0000 C CNN
+F 1 "47pF" V 6339 3100 50  0000 C CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W3.5mm_P5.00mm" H 6538 2950 50  0001 C CNN
+F 3 "~" H 6500 3100 50  0001 C CNN
+	1    6500 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4600 3050 4600 2600
+Wire Wire Line
+	4600 2600 4800 2600
+Connection ~ 4600 3050
+Wire Wire Line
+	5100 2600 5450 2600
+Wire Wire Line
+	5450 2600 5450 3050
+Connection ~ 5450 3050
+Wire Wire Line
+	6350 3100 6200 3100
+Connection ~ 6200 3100
+Wire Wire Line
+	6200 3100 6200 3650
+Wire Wire Line
+	6650 3100 6950 3100
+Wire Wire Line
+	6950 3100 6950 3750
+Connection ~ 6950 3750
+Wire Wire Line
+	6950 3750 7050 3750
+$Comp
+L Device:R R7
+U 1 1 600D8EAF
+P 6850 2700
+F 0 "R7" V 6643 2700 50  0000 C CNN
+F 1 "100k" V 6734 2700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6780 2700 50  0001 C CNN
+F 3 "~" H 6850 2700 50  0001 C CNN
+	1    6850 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6200 2700 6700 2700
+Wire Wire Line
+	7000 2700 7450 2700
+Wire Wire Line
+	6200 2700 6200 3100
+Wire Wire Line
+	7450 2700 7450 3750
+$Comp
+L Device:C C3
+U 1 1 60E8538F
+P 8650 2250
+F 0 "C3" H 8765 2296 50  0000 L CNN
+F 1 "100nF" H 8765 2205 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W3.5mm_P5.00mm" H 8688 2100 50  0001 C CNN
+F 3 "~" H 8650 2250 50  0001 C CNN
+	1    8650 2250
+	1    0    0    -1  
+$EndComp
+Connection ~ 8650 2400
+$Comp
+L Device:C C4
+U 1 1 60E85957
+P 8650 2750
+F 0 "C4" H 8765 2796 50  0000 L CNN
+F 1 "100nF" H 8765 2705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W3.5mm_P5.00mm" H 8688 2600 50  0001 C CNN
+F 3 "~" H 8650 2750 50  0001 C CNN
+	1    8650 2750
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
