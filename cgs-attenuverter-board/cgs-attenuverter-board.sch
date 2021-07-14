@@ -191,7 +191,7 @@ F 1 "Power" H 6608 3140 50  0000 C CNN
 F 2 "rumblesan-footprints:SolderWire-24AWG-0.2sqmm_1x03_D0.5mm_OD1.1mm_Relief" H 6500 2950 50  0001 C CNN
 F 3 "~" H 6500 2950 50  0001 C CNN
 	1    6500 2950
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L power:+12V #PWR05
@@ -263,13 +263,13 @@ $EndComp
 $Comp
 L Amplifier_Operational:TL072 U1
 U 3 1 622C3BA8
-P 6650 4250
-F 0 "U1" H 6463 4204 50  0000 R CNN
-F 1 "TL072" H 6463 4295 50  0000 R CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 6650 4250 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6650 4250 50  0001 C CNN
-	3    6650 4250
-	1    0    0    1   
+P 6450 4250
+F 0 "U1" H 6263 4204 50  0000 R CNN
+F 1 "TL072" H 6263 4295 50  0000 R CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 6450 4250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6450 4250 50  0001 C CNN
+	3    6450 4250
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:C C1
