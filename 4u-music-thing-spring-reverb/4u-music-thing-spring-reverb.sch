@@ -4,11 +4,11 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev "v02"
+Title "4U Spring Reverb"
+Date "2021-08-10"
+Rev "v03"
 Comp ""
-Comment1 ""
+Comment1 "Based on the Music Thing spring reverb"
 Comment2 "creativecommons.org/licenses/by/4.0/"
 Comment3 "License: CC BY 4.0"
 Comment4 "Author: Guy John"
@@ -192,8 +192,6 @@ F 3 "" H 4400 2500 50  0001 C CNN
 	1    4400 2500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2150 2050 2450 2050
 Wire Wire Line
 	2000 2200 2000 2350
 Wire Wire Line
@@ -434,17 +432,6 @@ Wire Wire Line
 	7500 3200 8050 3200
 Wire Wire Line
 	7650 3750 8050 3750
-$Comp
-L Device:R_POT RV1
-U 1 1 60F258F1
-P 2000 2050
-F 0 "RV1" H 1931 2096 50  0000 R CNN
-F 1 "100k" H 1931 2005 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical" H 2000 2050 50  0001 C CNN
-F 3 "~" H 2000 2050 50  0001 C CNN
-	1    2000 2050
-	1    0    0    -1  
-$EndComp
 $Comp
 L Amplifier_Operational:NE5532 U2
 U 1 1 60F4EFDC
@@ -713,8 +700,6 @@ F 3 "" H 2000 2350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2000 1750 1800 1750
-Wire Wire Line
-	2000 1750 2000 1900
 Wire Wire Line
 	3800 2200 3350 2200
 Wire Wire Line
@@ -1076,10 +1061,8 @@ F 3 "" H 1000 1450 50  0001 C CNN
 $EndComp
 Text Label 3350 2200 2    50   ~ 0
 AUDIO1_IN_MAIN
-Text Label 2450 2050 0    50   ~ 0
-AUDIO1_IN_CTRL
 Wire Wire Line
-	2250 3050 2700 3050
+	2250 3050 2400 3050
 Wire Wire Line
 	4200 2200 4300 2200
 Wire Wire Line
@@ -1361,4 +1344,50 @@ F 3 "~" H 13450 5500 50  0001 C CNN
 	1    13450 5500
 	1    0    0    -1  
 $EndComp
+Text Label 2450 2050 0    50   ~ 0
+AUDIO1_IN_CTRL
+Wire Wire Line
+	2000 1750 2000 1900
+$Comp
+L Device:R_POT RV1
+U 1 1 60F258F1
+P 2000 2050
+F 0 "RV1" H 1931 2096 50  0000 R CNN
+F 1 "100k" H 1931 2005 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical" H 2000 2050 50  0001 C CNN
+F 3 "~" H 2000 2050 50  0001 C CNN
+	1    2000 2050
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2150 2050 2450 2050
+$Comp
+L Device:R R16
+U 1 1 612196CB
+P 2400 3350
+F 0 "R16" H 2470 3396 50  0000 L CNN
+F 1 "100k" H 2470 3305 50  0000 L CNN
+F 2 "rumblesan-footprints:Resistor_THT_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2330 3350 50  0001 C CNN
+F 3 "~" H 2400 3350 50  0001 C CNN
+	1    2400 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND1 #PWR015
+U 1 1 61219B73
+P 2400 3650
+F 0 "#PWR015" H 2400 3400 50  0001 C CNN
+F 1 "GND1" H 2405 3477 50  0000 C CNN
+F 2 "" H 2400 3650 50  0001 C CNN
+F 3 "" H 2400 3650 50  0001 C CNN
+	1    2400 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 3200 2400 3050
+Connection ~ 2400 3050
+Wire Wire Line
+	2400 3050 2700 3050
+Wire Wire Line
+	2400 3650 2400 3500
 $EndSCHEMATC
