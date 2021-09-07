@@ -7,14 +7,14 @@
       "Application": "Pcbnew",
       "Version":     "(5.1.8-0-10_14)"
     },
-    "CreationDate":  "2021-08-10T10:11:07+01:00"
+    "CreationDate":  "2021-09-01T19:05:50+01:00"
   },
   "GeneralSpecs":
   {
     "ProjectId":
     {
-      "Name": "4u-music-thing-spring-reverb",
-      "GUID": "34752d6d-7573-4696-932d-7468696e672d",
+      "Name": "4u-spring-reverb",
+      "GUID": "34752d73-7072-4696-9e67-2d7265766572",
       "Revision": "rev?"
     },
     "Size":
@@ -40,37 +40,37 @@
   "FilesAttributes":
   [
     {
-      "Path":  "4u-music-thing-spring-reverb-F_Cu.gtl",
+      "Path":  "4u-spring-reverb-F_Cu.gtl",
       "FileFunction":  "Copper,L1,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "4u-music-thing-spring-reverb-B_Cu.gbl",
+      "Path":  "4u-spring-reverb-B_Cu.gbl",
       "FileFunction":  "Copper,L2,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "4u-music-thing-spring-reverb-F_SilkS.gto",
+      "Path":  "4u-spring-reverb-F_SilkS.gto",
       "FileFunction":  "Legend,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "4u-music-thing-spring-reverb-B_SilkS.gbo",
+      "Path":  "4u-spring-reverb-B_SilkS.gbo",
       "FileFunction":  "Legend,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "4u-music-thing-spring-reverb-F_Mask.gts",
+      "Path":  "4u-spring-reverb-F_Mask.gts",
       "FileFunction":  "SolderMask,Top",
       "FilePolarity":  "Negative"
     },
     {
-      "Path":  "4u-music-thing-spring-reverb-B_Mask.gbs",
+      "Path":  "4u-spring-reverb-B_Mask.gbs",
       "FileFunction":  "SolderMask,Bot",
       "FilePolarity":  "Negative"
     },
     {
-      "Path":  "4u-music-thing-spring-reverb-Edge_Cuts.gm1",
+      "Path":  "4u-spring-reverb-Edge_Cuts.gm1",
       "FileFunction":  "Profile",
       "FilePolarity":  "Positive"
     }

@@ -831,9 +831,9 @@ F 3 "" H 9400 5100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text Notes 9050 3500 0    50   ~ 0
-Values for R2:\n800r tank: R2 = 2k\n150r tank: R2 = 470r\nor use 10k trimmer
+Values for R14:\n800r tank: R14 = 2k\n150r tank: R14 = 470r\nor use 10k trimmer
 Text Notes 2650 6750 0    50   ~ 0
-R4 and R6 set recovery level\nR4 should be smaller than output coil impedance\n2250/2575r: R4 = 22r R6 = 22k\nIncrease R6 for stronger output,\nreduce R6 if circuit distorts even when\nspring drive is set low
+R2 and R3 set recovery level\nR2 should be smaller than output coil impedance\n2250/2575r: R2 = 22r R3 = 22k\nIncrease R3 for stronger output,\nreduce R3 if circuit distorts even when\nspring drive is set low
 Text Label 5650 2050 0    50   ~ 0
 AUDIO_MIX
 Wire Wire Line

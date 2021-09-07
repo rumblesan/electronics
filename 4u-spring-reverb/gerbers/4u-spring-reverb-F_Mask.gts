@@ -1,12 +1,12 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,(5.1.8-0-10_14)*%
-%TF.CreationDate,2021-08-10T10:11:07+01:00*%
-%TF.ProjectId,4u-music-thing-spring-reverb,34752d6d-7573-4696-932d-7468696e672d,rev?*%
+%TF.CreationDate,2021-09-01T19:05:50+01:00*%
+%TF.ProjectId,4u-spring-reverb,34752d73-7072-4696-9e67-2d7265766572,rev?*%
 %TF.SameCoordinates,Original*%
-%TF.FileFunction,Soldermask,Bot*%
+%TF.FileFunction,Soldermask,Top*%
 %TF.FilePolarity,Negative*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (5.1.8-0-10_14)) date 2021-08-10 10:11:07*
+G04 Created by KiCad (PCBNEW (5.1.8-0-10_14)) date 2021-09-01 19:05:50*
 %MOMM*%
 %LPD*%
 G01*
