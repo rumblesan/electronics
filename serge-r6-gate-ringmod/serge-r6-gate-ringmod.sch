@@ -14,17 +14,6 @@ Comment3 "License: CC BY 4.0"
 Comment4 "Author: Guy John"
 $EndDescr
 $Comp
-L Amplifier_Operational:CA3080 U1
-U 1 1 61740BAF
-P 4200 5750
-F 0 "U1" H 4544 5796 50  0000 L CNN
-F 1 "CA3080" H 4544 5705 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 4200 5750 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/ca30/ca3080-a.pdf" H 4200 5850 50  0001 C CNN
-	1    4200 5750
-	1    0    0    -1  
-$EndComp
-$Comp
 L Transistor_BJT:2N3906 Q3
 U 1 1 617415D6
 P 4300 3550
@@ -55,17 +44,6 @@ F 1 "2N3906" H 4140 2345 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4150 2225 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/2N3906-D.PDF" H 3950 2300 50  0001 L CNN
 	1    3950 2300
-	1    0    0    1   
-$EndComp
-$Comp
-L Amplifier_Operational:TL071 U2
-U 1 1 617444C5
-P 5450 5850
-F 0 "U2" H 5650 5550 50  0000 L CNN
-F 1 "TL071" H 5650 5450 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 5500 5900 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5600 6000 50  0001 C CNN
-	1    5450 5850
 	1    0    0    1   
 $EndComp
 $Comp
@@ -172,21 +150,10 @@ L Device:R_POT_TRIM RV1
 U 1 1 6174BBBE
 P 1650 4700
 F 0 "RV1" H 1580 4746 50  0000 R CNN
-F 1 "25k" H 1580 4655 50  0000 R CNN
+F 1 "20k" H 1580 4655 50  0000 R CNN
 F 2 "rumblesan-footprints:Potentiometer_THT_Bourns_3306P_Vertical" H 1650 4700 50  0001 C CNN
 F 3 "~" H 1650 4700 50  0001 C CNN
 	1    1650 4700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR012
-U 1 1 6174CBA8
-P 3900 3850
-F 0 "#PWR012" H 3900 3600 50  0001 C CNN
-F 1 "GND" H 3905 3677 50  0000 C CNN
-F 2 "" H 3900 3850 50  0001 C CNN
-F 3 "" H 3900 3850 50  0001 C CNN
-	1    3900 3850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -290,11 +257,6 @@ $EndComp
 Wire Wire Line
 	3600 7000 3600 6900
 Wire Wire Line
-	3750 5250 3750 5650
-Wire Wire Line
-	3750 5650 3900 5650
-Connection ~ 3200 5250
-Wire Wire Line
 	3600 6450 3750 6450
 Wire Wire Line
 	3750 6450 3750 5850
@@ -305,8 +267,6 @@ Wire Wire Line
 	3900 3350 3900 3300
 Wire Wire Line
 	4200 3300 4200 3350
-Wire Wire Line
-	3900 3750 3900 3850
 $Comp
 L Device:R R6
 U 1 1 61756BC5
@@ -347,7 +307,7 @@ L Device:R_POT_TRIM RV2
 U 1 1 61758930
 P 1850 3550
 F 0 "RV2" H 1780 3596 50  0000 R CNN
-F 1 "25k" H 1780 3505 50  0000 R CNN
+F 1 "20k" H 1780 3505 50  0000 R CNN
 F 2 "rumblesan-footprints:Potentiometer_THT_Bourns_3306P_Vertical" H 1850 3550 50  0001 C CNN
 F 3 "~" H 1850 3550 50  0001 C CNN
 	1    1850 3550
@@ -413,19 +373,6 @@ Wire Wire Line
 Wire Wire Line
 	2650 2950 2650 3550
 $Comp
-L Device:R R15
-U 1 1 61770154
-P 4200 4100
-F 0 "R15" H 4270 4146 50  0000 L CNN
-F 1 "15k" H 4270 4055 50  0000 L CNN
-F 2 "rumblesan-footprints:Resistor_THT_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4130 4100 50  0001 C CNN
-F 3 "~" H 4200 4100 50  0001 C CNN
-	1    4200 4100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4200 3750 4200 3950
-$Comp
 L Device:R R17
 U 1 1 617719DF
 P 4700 3850
@@ -482,13 +429,6 @@ Wire Wire Line
 	6000 3350 6200 3350
 Wire Wire Line
 	6350 3500 6350 3600
-Wire Wire Line
-	3200 5250 3750 5250
-Wire Wire Line
-	3750 4700 3750 5250
-Wire Wire Line
-	2250 4700 3750 4700
-Connection ~ 3750 5250
 $Comp
 L Device:R R10
 U 1 1 6178A0DF
@@ -541,8 +481,6 @@ F 3 "~" H 2950 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4200 4250 4200 5450
-Wire Wire Line
 	2650 3550 3600 3550
 Wire Wire Line
 	2950 2450 2950 2300
@@ -588,7 +526,7 @@ L Device:R_POT_TRIM RV3
 U 1 1 617B3AC0
 P 4050 1100
 F 0 "RV3" V 3843 1100 50  0000 C CNN
-F 1 "25k" V 3934 1100 50  0000 C CNN
+F 1 "20k" V 3934 1100 50  0000 C CNN
 F 2 "rumblesan-footprints:Potentiometer_THT_Bourns_3306P_Vertical" H 4050 1100 50  0001 C CNN
 F 3 "~" H 4050 1100 50  0001 C CNN
 	1    4050 1100
@@ -669,7 +607,7 @@ L Device:C C3
 U 1 1 617C96B1
 P 5400 4500
 F 0 "C3" V 5148 4500 50  0000 C CNN
-F 1 "220pf" V 5239 4500 50  0000 C CNN
+F 1 "47pf" V 5239 4500 50  0000 C CNN
 F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm" H 5438 4350 50  0001 C CNN
 F 3 "~" H 5400 4500 50  0001 C CNN
 	1    5400 4500
@@ -768,23 +706,6 @@ F 3 "" H 4100 6200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4100 6050 4100 6200
-$Comp
-L power:+12V #PWR013
-U 1 1 617E69EB
-P 4000 5250
-F 0 "#PWR013" H 4000 5100 50  0001 C CNN
-F 1 "+12V" H 4015 5423 50  0000 C CNN
-F 2 "" H 4000 5250 50  0001 C CNN
-F 3 "" H 4000 5250 50  0001 C CNN
-	1    4000 5250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 5250 4000 5350
-Wire Wire Line
-	4000 5350 4100 5350
-Wire Wire Line
-	4100 5350 4100 5450
 $Comp
 L Device:Jumper_NO_Small JP1
 U 1 1 617E9716
@@ -1445,4 +1366,83 @@ Text Notes 5300 1550 0    50   ~ 0
 bridge 1 and 2 for VCA\nbridge 2 and 3 for RingMod
 Text Notes 3300 7600 0    50   ~ 0
 Bridge for RingMod
+$Comp
+L Amplifier_Operational:LM301 U?
+U 1 1 60FC436F
+P 5450 5850
+F 0 "U?" H 5794 5804 50  0000 L CNN
+F 1 "LM301" H 5794 5895 50  0000 L CNN
+F 2 "" H 5500 5900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm101a-n.pdf" H 5500 6000 50  0001 C CNN
+	1    5450 5850
+	1    0    0    1   
+$EndComp
+Connection ~ 3200 5250
+Wire Wire Line
+	3750 5650 3900 5650
+Wire Wire Line
+	4100 5350 4100 5450
+Wire Wire Line
+	4000 5350 4100 5350
+Wire Wire Line
+	4000 5250 4000 5350
+$Comp
+L power:+12V #PWR013
+U 1 1 617E69EB
+P 4000 5250
+F 0 "#PWR013" H 4000 5100 50  0001 C CNN
+F 1 "+12V" H 4015 5423 50  0000 C CNN
+F 2 "" H 4000 5250 50  0001 C CNN
+F 3 "" H 4000 5250 50  0001 C CNN
+	1    4000 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4250 4200 5450
+Connection ~ 3750 5250
+Wire Wire Line
+	2250 4700 3750 4700
+Wire Wire Line
+	3750 4700 3750 5250
+Wire Wire Line
+	3200 5250 3750 5250
+Wire Wire Line
+	4200 3750 4200 3950
+$Comp
+L Device:R R15
+U 1 1 61770154
+P 4200 4100
+F 0 "R15" H 4270 4146 50  0000 L CNN
+F 1 "15k" H 4270 4055 50  0000 L CNN
+F 2 "rumblesan-footprints:Resistor_THT_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4130 4100 50  0001 C CNN
+F 3 "~" H 4200 4100 50  0001 C CNN
+	1    4200 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3750 3900 3850
+Wire Wire Line
+	3750 5250 3750 5650
+$Comp
+L power:GND #PWR012
+U 1 1 6174CBA8
+P 3900 3850
+F 0 "#PWR012" H 3900 3600 50  0001 C CNN
+F 1 "GND" H 3905 3677 50  0000 C CNN
+F 2 "" H 3900 3850 50  0001 C CNN
+F 3 "" H 3900 3850 50  0001 C CNN
+	1    3900 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:CA3080 U1
+U 1 1 61740BAF
+P 4200 5750
+F 0 "U1" H 4544 5796 50  0000 L CNN
+F 1 "CA3080" H 4544 5705 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 4200 5750 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/ca30/ca3080-a.pdf" H 4200 5850 50  0001 C CNN
+	1    4200 5750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
