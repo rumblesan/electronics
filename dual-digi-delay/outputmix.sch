@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 10
+Sheet 10 10
 Title ""
 Date ""
 Rev ""
@@ -259,9 +259,9 @@ Wire Wire Line
 Wire Wire Line
 	2600 4300 2750 4300
 Text HLabel 2600 3350 0    50   Input ~ 0
-DELAY2_WET
+DELAY2_WET_LEVEL
 Text HLabel 2600 4300 0    50   Input ~ 0
-DELAY1_WET
+DELAY1_WET_LEVEL
 Text HLabel 4300 4650 3    50   Input ~ 0
 DELAY_MIX
 Connection ~ 5350 4400

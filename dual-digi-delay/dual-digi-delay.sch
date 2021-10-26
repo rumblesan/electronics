@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 10
 Title "Dual Digi Delay"
-Date ""
+Date "2021-10-26"
 Rev "v01"
 Comp ""
 Comment1 ""
@@ -68,7 +68,7 @@ U 61B3CF5F
 F0 "PT2399-Delay-1" 50
 F1 "pt2399-delay.sch" 50
 F2 "AUDIO_IN" I L 11250 3500 50 
-F3 "AUDIO_OUT" I L 11250 3600 50 
+F3 "AUDIO_OUT" I L 11250 3700 50 
 F4 "DELAY_TIME_CTRL" I L 11250 4050 50 
 F5 "ANALOG_GND" I R 12550 3950 50 
 F6 "DIGITAL_GND" I R 12550 4050 50 
@@ -97,8 +97,6 @@ F 3 "" H 12850 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12550 3550 12700 3550
-Wire Wire Line
 	12700 3550 12700 3400
 $Comp
 L power:+5V #PWR010
@@ -111,50 +109,6 @@ F 3 "" H 12700 3400 50  0001 C CNN
 	1    12700 3400
 	1    0    0    -1  
 $EndComp
-$Comp
-L Mechanical:MountingHole H1
-U 1 1 65CB144B
-P 10800 1250
-F 0 "H1" H 10900 1296 50  0000 L CNN
-F 1 "MountingHole" H 10900 1205 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 10800 1250 50  0001 C CNN
-F 3 "~" H 10800 1250 50  0001 C CNN
-	1    10800 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H2
-U 1 1 65CB16EE
-P 10800 1450
-F 0 "H2" H 10900 1496 50  0000 L CNN
-F 1 "MountingHole" H 10900 1405 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 10800 1450 50  0001 C CNN
-F 3 "~" H 10800 1450 50  0001 C CNN
-	1    10800 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H3
-U 1 1 65CB5C1E
-P 10800 1700
-F 0 "H3" H 10900 1746 50  0000 L CNN
-F 1 "MountingHole" H 10900 1655 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 10800 1700 50  0001 C CNN
-F 3 "~" H 10800 1700 50  0001 C CNN
-	1    10800 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H4
-U 1 1 65CB5C24
-P 10800 1900
-F 0 "H4" H 10900 1946 50  0000 L CNN
-F 1 "MountingHole" H 10900 1855 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 10800 1900 50  0001 C CNN
-F 3 "~" H 10800 1900 50  0001 C CNN
-	1    10800 1900
-	1    0    0    -1  
-$EndComp
 $Sheet
 S 10950 8100 1450 950 
 U 618C5F1E
@@ -165,17 +119,6 @@ F3 "+V" I R 12400 8200 50
 F4 "-V" I R 12400 9000 50 
 F5 "0V" I L 10950 8900 50 
 $EndSheet
-$Comp
-L Connector:Conn_01x04_Female J18
-U 1 1 61BEDE0F
-P 3300 8100
-F 0 "J18" H 3200 7850 50  0000 L CNN
-F 1 "Delay1 CV" H 3100 8300 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3300 8100 50  0001 C CNN
-F 3 "~" H 3300 8100 50  0001 C CNN
-	1    3300 8100
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	3650 8000 3500 8000
 Wire Wire Line
@@ -184,21 +127,6 @@ Wire Wire Line
 	3650 8200 3500 8200
 Wire Wire Line
 	3650 8300 3500 8300
-$Comp
-L Connector:Conn_01x06_Female J19
-U 1 1 61CF4590
-P 3300 8850
-F 0 "J19" H 3192 9143 50  0000 C CNN
-F 1 "Delay2 CV" H 3192 9144 50  0001 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 3300 8850 50  0001 C CNN
-F 3 "~" H 3300 8850 50  0001 C CNN
-	1    3300 8850
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	3500 8650 3650 8650
-Wire Wire Line
-	3500 8750 3650 8750
 Wire Wire Line
 	3500 8850 3650 8850
 Wire Wire Line
@@ -206,9 +134,7 @@ Wire Wire Line
 Wire Wire Line
 	3500 9050 3650 9050
 Wire Wire Line
-	3650 9700 3550 9700
-Wire Wire Line
-	3550 9150 3500 9150
+	3500 9150 3650 9150
 $Comp
 L Connector:Conn_01x04_Female J20
 U 1 1 61F9E04B
@@ -220,7 +146,6 @@ F 3 "~" H 2800 10350 50  0001 C CNN
 	1    2800 10350
 	-1   0    0    -1  
 $EndComp
-Connection ~ 3550 9700
 $Comp
 L Connector:Conn_01x02_Male J21
 U 1 1 6201FDDD
@@ -236,19 +161,6 @@ Wire Wire Line
 	6850 8100 6650 8100
 Wire Wire Line
 	6850 8200 6650 8200
-$Sheet
-S 4900 4900 1200 1000
-U 621CDCC0
-F0 "DelayOut" 50
-F1 "delay-out.sch" 50
-F2 "DELAY1_WET" I R 6100 5600 50 
-F3 "DELAY2_WET" I R 6100 5700 50 
-F4 "+VCC" I R 6100 5000 50 
-F5 "GND" I R 6100 5100 50 
-F6 "-VCC" I R 6100 5200 50 
-F7 "DELAY1_WET_OUT" I L 4900 5000 50 
-F8 "DELAY2_WET_OUT" I L 4900 5100 50 
-$EndSheet
 $Comp
 L power:+5V #PWR08
 U 1 1 62598F47
@@ -375,52 +287,33 @@ Connection ~ 1150 9150
 Wire Wire Line
 	1150 9150 1250 9150
 $Sheet
-S 1250 7800 1400 1650
+S 1250 7800 1400 1950
 U 619F327A
 F0 "CVInputs" 50
 F1 "cv-inputs.sch" 50
-F2 "DELAY1_CV_INPUT" I R 2650 8100 50 
-F3 "DELAY1_CV_ATTV" I R 2650 8000 50 
-F4 "JOIN_CV_SOURCE" I R 2650 8300 50 
-F5 "JOIN_CV" I R 2650 8950 50 
-F6 "DELAY2_CV_INPUT" I R 2650 8850 50 
-F7 "DELAY2_CV_ATTV" I R 2650 8650 50 
-F8 "DELAY1_CONTROL" I R 2650 8200 50 
-F9 "DELAY2_CV_CTRL" I R 2650 8750 50 
-F10 "DELAY2_CONTROL" I R 2650 9050 50 
+F2 "DELAY1_CV_INPUT" I R 2650 8400 50 
+F3 "DELAY1_CV_ATTV" I R 2650 8200 50 
+F4 "JOIN_CV_SOURCE" I R 2650 8000 50 
+F5 "JOIN_CV" I R 2650 9250 50 
+F6 "DELAY2_CV_INPUT" I R 2650 9150 50 
+F7 "DELAY2_CV_ATTV" I R 2650 8950 50 
+F8 "DELAY1_CONTROL" I R 2650 8100 50 
+F9 "DELAY2_CV_CTRL" I R 2650 9050 50 
+F10 "DELAY2_CONTROL" I R 2650 8850 50 
 F11 "-V" I L 1250 9300 50 
 F12 "0V" I L 1250 9150 50 
-F13 "+V" I L 1250 9000 50 
+F13 "DELAY1_CV_CTRL" I R 2650 8300 50 
 $EndSheet
 Wire Wire Line
 	1250 9300 1050 9300
 Wire Wire Line
-	2750 9150 2850 9150
-Wire Wire Line
-	2750 9650 1150 9650
-Wire Wire Line
-	2750 9150 2750 9650
+	2650 9150 2850 9150
 Wire Wire Line
 	2650 9050 2850 9050
 Wire Wire Line
 	2650 8950 2850 8950
 Wire Wire Line
 	2650 8850 2850 8850
-Wire Wire Line
-	2650 8750 2850 8750
-Wire Wire Line
-	2650 8650 2850 8650
-$Comp
-L Connector:Conn_01x06_Male J12
-U 1 1 61CF6DE6
-P 3050 8850
-F 0 "J12" H 3158 9139 50  0000 C CNN
-F 1 "Delay2 CV" H 3158 9140 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 3050 8850 50  0001 C CNN
-F 3 "~" H 3050 8850 50  0001 C CNN
-	1    3050 8850
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	2650 8300 2850 8300
 Wire Wire Line
@@ -429,37 +322,6 @@ Wire Wire Line
 	2650 8100 2850 8100
 Wire Wire Line
 	2650 8000 2850 8000
-$Comp
-L Connector:Conn_01x04_Male J11
-U 1 1 61C52B3B
-P 3050 8100
-F 0 "J11" H 3100 7850 50  0000 C CNN
-F 1 "Delay1 CV" H 3150 8250 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3050 8100 50  0001 C CNN
-F 3 "~" H 3050 8100 50  0001 C CNN
-	1    3050 8100
-	-1   0    0    -1  
-$EndComp
-$Sheet
-S 3650 7850 3000 2150
-U 642384B2
-F0 "CVControl" 50
-F1 "cv-control.sch" 50
-F2 "DELAY1_CV_INPUT" I L 3650 8100 50 
-F3 "DELAY1_CV_ATTV" I L 3650 8000 50 
-F4 "DELAY1_CONTROL" I L 3650 8200 50 
-F5 "DELAY1_CV_JOIN_OUT" I L 3650 8300 50 
-F6 "DELAY1_TIME_VOLTAGE" I R 6650 8100 50 
-F7 "+VCC" I L 3650 9500 50 
-F8 "DELAY2_CV_INPUT1" I L 3650 8950 50 
-F9 "DELAY2_CV_INPUT2" I L 3650 8850 50 
-F10 "DELAY2_CV_CTRL" I L 3650 8750 50 
-F11 "DELAY2_CV_ATTV" I L 3650 8650 50 
-F12 "DELAY2_CONTROL" I L 3650 9050 50 
-F13 "DELAY2_TIME_VOLTAGE" I R 6650 8200 50 
-F14 "-VCC" I L 3650 9800 50 
-F15 "GND" I L 3650 9700 50 
-$EndSheet
 Wire Wire Line
 	4650 3350 4900 3350
 Wire Wire Line
@@ -517,49 +379,11 @@ Wire Wire Line
 Wire Wire Line
 	4450 3200 4650 3200
 Wire Wire Line
-	3100 3900 3250 3900
+	3100 4950 3250 4950
 Wire Wire Line
-	3100 4000 3250 4000
-Wire Wire Line
-	3100 4100 3250 4100
-Wire Wire Line
-	3100 4550 3250 4550
-Wire Wire Line
-	3100 4450 3250 4450
-Wire Wire Line
-	4400 3900 4750 3900
-Wire Wire Line
-	6200 6050 6200 5600
-$Comp
-L Connector:Conn_01x04_Male J8
-U 1 1 62FA8C79
-P 6750 5600
-F 0 "J8" H 6650 5600 50  0000 C CNN
-F 1 "Delay Send Return" H 6700 5300 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6750 5600 50  0001 C CNN
-F 3 "~" H 6750 5600 50  0001 C CNN
-	1    6750 5600
-	-1   0    0    -1  
-$EndComp
-Connection ~ 6200 5600
-Wire Wire Line
-	6100 5600 6200 5600
-Wire Wire Line
-	4750 6050 6200 6050
-Wire Wire Line
-	4700 6100 6300 6100
-Wire Wire Line
-	6200 5600 6550 5600
-Wire Wire Line
-	4650 6150 6400 6150
+	3100 4850 3250 4850
 Wire Wire Line
 	4700 2500 4700 2800
-Wire Wire Line
-	7200 2800 7200 4500
-Wire Wire Line
-	6450 5350 6450 5500
-Wire Wire Line
-	6450 5500 6550 5500
 $Comp
 L Connector:Conn_01x04_Male J15
 U 1 1 6302E3F9
@@ -633,17 +457,6 @@ F 3 "~" H 10850 7500 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x04_Female J13
-U 1 1 6319778D
-P 10300 3600
-F 0 "J13" H 10328 3576 50  0000 L CNN
-F 1 "Delay Send Return" H 10328 3485 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 10300 3600 50  0001 C CNN
-F 3 "~" H 10300 3600 50  0001 C CNN
-	1    10300 3600
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x02_Female J10
 U 1 1 627CD3D8
 P 10300 4050
@@ -657,13 +470,7 @@ $EndComp
 Wire Wire Line
 	11250 3500 10500 3500
 Wire Wire Line
-	11250 3600 10500 3600
-Wire Wire Line
 	11250 4800 11000 4800
-Wire Wire Line
-	11000 4800 11000 3700
-Wire Wire Line
-	11000 3700 10500 3700
 Wire Wire Line
 	11250 4900 10950 4900
 Wire Wire Line
@@ -690,37 +497,10 @@ F 3 "~" H 9200 10200 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	6450 10250 3100 10250
-Wire Wire Line
-	3000 10550 3400 10550
-Wire Wire Line
-	3400 9800 3400 10550
-Wire Wire Line
-	3400 9800 3650 9800
-Connection ~ 3400 10550
-Wire Wire Line
-	3400 10550 6450 10550
-Wire Wire Line
-	3300 9700 3300 10450
-Wire Wire Line
-	3300 9700 3550 9700
-Wire Wire Line
-	3300 10450 3050 10450
-Wire Wire Line
-	3100 9500 3100 10250
-Wire Wire Line
-	3100 9500 3650 9500
-Connection ~ 3100 10250
-Wire Wire Line
-	3100 10250 3000 10250
-Wire Wire Line
-	3550 9150 3550 9700
-Wire Wire Line
 	3000 10350 3050 10350
 Wire Wire Line
 	3050 10350 3050 10450
 Connection ~ 3050 10350
-Connection ~ 3050 10450
 Wire Wire Line
 	3050 10450 3000 10450
 $Comp
@@ -735,19 +515,11 @@ F 3 "~" H 1850 10350 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1650 10250 850  10250
-Wire Wire Line
-	850  10250 850  9000
-Wire Wire Line
-	850  9000 1250 9000
-Wire Wire Line
 	1650 10350 1600 10350
 Wire Wire Line
 	950  10350 950  9150
 Wire Wire Line
 	950  9150 1150 9150
-Wire Wire Line
-	1150 9150 1150 9650
 Wire Wire Line
 	1650 10450 1600 10450
 Wire Wire Line
@@ -780,14 +552,12 @@ Wire Wire Line
 Connection ~ 8900 10200
 Wire Wire Line
 	8900 10200 8800 10200
-Text Label 6450 10250 0    50   ~ 0
+Text Label 7200 9700 0    50   ~ 0
 MID_+V
-Text Label 6450 10350 0    50   ~ 0
+Text Label 7200 9800 0    50   ~ 0
 MID_0V
-Text Label 6450 10550 0    50   ~ 0
+Text Label 7200 9900 0    50   ~ 0
 MID_-V
-Wire Wire Line
-	3050 10350 6450 10350
 Text Label 6250 5000 0    50   ~ 0
 MID_+V
 Text Label 6250 5100 0    50   ~ 0
@@ -815,57 +585,15 @@ Wire Wire Line
 Wire Wire Line
 	4700 2800 7200 2800
 Wire Wire Line
-	6450 5350 7200 5350
-Wire Wire Line
 	7050 2250 7200 2250
 Wire Wire Line
 	7200 2350 7050 2350
 Wire Wire Line
 	7200 2450 7050 2450
-$Sheet
-S 4900 3050 1700 1150
-U 62AB7D6F
-F0 "OutputMix" 50
-F1 "outputmix.sch" 50
-F2 "DELAY2_WET" I L 4900 3650 50 
-F3 "DELAY1_WET" I L 4900 3550 50 
-F4 "DELAY_MIX" I L 4900 3350 50 
-F5 "MIX_OUT" I L 4900 3250 50 
-F6 "+V" I R 6600 3800 50 
-F7 "0V" I R 6600 3900 50 
-F8 "-V" I R 6600 4000 50 
-F9 "DRY_AUDIO_INPUT" I L 4900 3150 50 
-$EndSheet
-$Comp
-L Connector:Conn_01x02_Female J17
-U 1 1 63726946
-P 4400 3550
-F 0 "J17" H 4450 3450 50  0000 C CNN
-F 1 "Delay Wet" H 4350 3650 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4400 3550 50  0001 C CNN
-F 3 "~" H 4400 3550 50  0001 C CNN
-	1    4400 3550
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Male J6
-U 1 1 6372829F
-P 3500 3550
-F 0 "J6" H 3472 3524 50  0000 R CNN
-F 1 "Delay Wet" H 3750 3400 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3500 3550 50  0001 C CNN
-F 3 "~" H 3500 3550 50  0001 C CNN
-	1    3500 3550
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
-	4600 3550 4900 3550
+	3100 4150 3300 4150
 Wire Wire Line
-	4900 3650 4600 3650
-Wire Wire Line
-	3100 3550 3300 3550
-Wire Wire Line
-	3100 3650 3300 3650
+	3100 4250 3300 4250
 Text Label 7200 2250 0    50   ~ 0
 MID_+V
 Text Label 7200 2350 0    50   ~ 0
@@ -890,38 +618,14 @@ $EndComp
 $Comp
 L Connector:Conn_01x02_Male J5
 U 1 1 638DC87B
-P 3450 4450
-F 0 "J5" H 3422 4424 50  0000 R CNN
-F 1 "Delay Out" H 3700 4300 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3450 4450 50  0001 C CNN
-F 3 "~" H 3450 4450 50  0001 C CNN
-	1    3450 4450
+P 3450 4850
+F 0 "J5" H 3422 4824 50  0000 R CNN
+F 1 "Delay Out" H 3700 4700 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3450 4850 50  0001 C CNN
+F 3 "~" H 3450 4850 50  0001 C CNN
+	1    3450 4850
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x04_Female J22
-U 1 1 638DD52D
-P 4200 4000
-F 0 "J22" H 4150 3750 50  0000 L CNN
-F 1 "Delay Audio" H 3800 4200 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 4200 4000 50  0001 C CNN
-F 3 "~" H 4200 4000 50  0001 C CNN
-	1    4200 4000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x04_Male J2
-U 1 1 638DE928
-P 3450 4000
-F 0 "J2" H 3450 3750 50  0000 C CNN
-F 1 "Delay Audio" H 3600 4150 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3450 4000 50  0001 C CNN
-F 3 "~" H 3450 4000 50  0001 C CNN
-	1    3450 4000
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	4750 3900 4750 6050
 $Comp
 L Connector:Conn_01x02_Male J4
 U 1 1 63984533
@@ -968,106 +672,27 @@ F 3 "~" H 3500 3100 50  0001 C CNN
 	1    3500 3100
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	3100 4200 3250 4200
-Wire Wire Line
-	4600 4500 7200 4500
-Connection ~ 7200 4500
-Wire Wire Line
-	7200 4500 7200 5350
-Wire Wire Line
-	6100 5700 6300 5700
-Wire Wire Line
-	6300 5800 6300 6100
-Wire Wire Line
-	6300 5700 6300 5800
-Connection ~ 6300 5800
-Wire Wire Line
-	6550 5800 6300 5800
-Wire Wire Line
-	6400 5700 6400 6150
-Wire Wire Line
-	6400 5700 6550 5700
 $Sheet
-S 1350 2100 1750 2550
+S 1350 2100 1750 3050
 U 623586D0
 F0 "AudioIO" 50
 F1 "audioio.sch" 50
 F2 "AUDIO_IN" I R 3100 2200 50 
 F3 "DRY_AUDIO_LEVEL" I R 3100 2800 50 
-F4 "DELAY1_WET" I R 3100 3900 50 
-F5 "DELAY2_WET" I R 3100 4200 50 
-F6 "DELAY1_WET_LEVEL" I R 3100 3550 50 
-F7 "DELAY2_WET_LEVEL" I R 3100 3650 50 
+F4 "DELAY1_WET" I R 3100 3950 50 
+F5 "DELAY2_WET" I R 3100 4250 50 
+F6 "DELAY1_WET_LEVEL" I R 3100 4050 50 
+F7 "DELAY2_WET_LEVEL" I R 3100 4150 50 
 F8 "0V" I L 1350 3050 50 
 F9 "FEEDBACK_LEVEL" I R 3100 2300 50 
 F10 "DRY_AUDIO_INPUT" I R 3100 2400 50 
 F11 "FEEDBACK_INPUT" I R 3100 3100 50 
 F12 "MAIN_OUT" I R 3100 2900 50 
-F13 "DELAY1_WET_OUT" I R 3100 4450 50 
-F14 "DELAY2_WET_OUT" I R 3100 4550 50 
-F15 "INPUT_MIX" I R 3100 4000 50 
-F16 "DELAY2_SOURCE" I R 3100 4100 50 
+F13 "DELAY1_WET_OUT" I R 3100 4850 50 
+F14 "DELAY2_WET_OUT" I R 3100 4950 50 
+F15 "INPUT_MIX" I R 3100 4350 50 
+F16 "DELAY2_SOURCE" I R 3100 4450 50 
 $EndSheet
-Wire Wire Line
-	4400 4200 4700 4200
-Wire Wire Line
-	4700 4200 4700 6100
-$Comp
-L Mechanical:MountingHole H5
-U 1 1 63AD13BC
-P 11700 1200
-F 0 "H5" H 11800 1246 50  0000 L CNN
-F 1 "MountingHole" H 11800 1155 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 11700 1200 50  0001 C CNN
-F 3 "~" H 11700 1200 50  0001 C CNN
-	1    11700 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H6
-U 1 1 63AD13C2
-P 11700 1400
-F 0 "H6" H 11800 1446 50  0000 L CNN
-F 1 "MountingHole" H 11800 1355 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 11700 1400 50  0001 C CNN
-F 3 "~" H 11700 1400 50  0001 C CNN
-	1    11700 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H7
-U 1 1 63AF1EB1
-P 11750 1650
-F 0 "H7" H 11850 1696 50  0000 L CNN
-F 1 "MountingHole" H 11850 1605 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 11750 1650 50  0001 C CNN
-F 3 "~" H 11750 1650 50  0001 C CNN
-	1    11750 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H8
-U 1 1 63AF1EB7
-P 11750 1850
-F 0 "H8" H 11850 1896 50  0000 L CNN
-F 1 "MountingHole" H 11850 1805 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 11750 1850 50  0001 C CNN
-F 3 "~" H 11750 1850 50  0001 C CNN
-	1    11750 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H9
-U 1 1 63AFD3DA
-P 11750 2150
-F 0 "H9" H 11850 2196 50  0000 L CNN
-F 1 "MountingHole" H 11850 2105 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 11750 2150 50  0001 C CNN
-F 3 "~" H 11750 2150 50  0001 C CNN
-	1    11750 2150
-	1    0    0    -1  
-$EndComp
 Text Label 4550 2650 2    50   ~ 0
 MID_0V
 Wire Wire Line
@@ -1108,11 +733,397 @@ Wire Wire Line
 Wire Wire Line
 	3250 2500 3300 2500
 Wire Wire Line
-	4600 4000 4400 4000
+	7200 2800 7200 4550
 Wire Wire Line
-	4600 4000 4600 4500
+	4800 4550 6800 4550
 Wire Wire Line
-	4400 4100 4650 4100
+	10500 3600 11000 3600
 Wire Wire Line
-	4650 4100 4650 6150
+	11000 3600 11000 4800
+Wire Wire Line
+	10500 3700 11250 3700
+Wire Wire Line
+	6100 5700 6300 5700
+Wire Wire Line
+	6100 5600 6200 5600
+Wire Wire Line
+	6200 6050 6200 5600
+$Sheet
+S 4900 4900 1200 1000
+U 621CDCC0
+F0 "DelayOut" 50
+F1 "delay-out.sch" 50
+F2 "DELAY1_WET" I R 6100 5600 50 
+F3 "DELAY2_WET" I R 6100 5700 50 
+F4 "+VCC" I R 6100 5000 50 
+F5 "GND" I R 6100 5100 50 
+F6 "-VCC" I R 6100 5200 50 
+F7 "DELAY1_WET_OUT" I L 4900 5000 50 
+F8 "DELAY2_WET_OUT" I L 4900 5100 50 
+$EndSheet
+Connection ~ 6200 5600
+$Comp
+L Connector:Conn_01x02_Female J32
+U 1 1 63E5CB3C
+P 10300 3500
+F 0 "J32" H 10350 3400 50  0000 C CNN
+F 1 "Delay Send" H 10700 3500 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 10300 3500 50  0001 C CNN
+F 3 "~" H 10300 3500 50  0001 C CNN
+	1    10300 3500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J33
+U 1 1 63E5D257
+P 10300 3700
+F 0 "J33" H 10350 3600 50  0000 C CNN
+F 1 "Delay Return" H 10700 3700 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 10300 3700 50  0001 C CNN
+F 3 "~" H 10300 3700 50  0001 C CNN
+	1    10300 3700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J13
+U 1 1 63E79115
+P 7000 4850
+F 0 "J13" H 6972 4824 50  0000 R CNN
+F 1 "Delay Send" H 6972 4733 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7000 4850 50  0001 C CNN
+F 3 "~" H 7000 4850 50  0001 C CNN
+	1    7000 4850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J8
+U 1 1 63E79BAD
+P 6750 5600
+F 0 "J8" H 6722 5574 50  0000 R CNN
+F 1 "Delay Return" H 6722 5483 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6750 5600 50  0001 C CNN
+F 3 "~" H 6750 5600 50  0001 C CNN
+	1    6750 5600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 4850 6800 4550
+Connection ~ 6800 4550
+Wire Wire Line
+	6800 4550 7200 4550
+Wire Wire Line
+	6600 4700 6600 4950
+Wire Wire Line
+	6600 4950 6800 4950
+Connection ~ 6300 5700
+Wire Wire Line
+	6300 5700 6300 6100
+Wire Wire Line
+	6200 5600 6550 5600
+Wire Wire Line
+	6300 5700 6550 5700
+Wire Wire Line
+	4650 6100 6300 6100
+Wire Wire Line
+	4700 6050 6200 6050
+Wire Wire Line
+	4750 4700 6600 4700
+Wire Wire Line
+	1650 10250 1600 10250
+Wire Wire Line
+	1600 10250 1600 10350
+Wire Wire Line
+	3000 10250 3050 10250
+Wire Wire Line
+	3050 10250 3050 10350
+$Sheet
+S 3650 7850 3000 2150
+U 642384B2
+F0 "CVControl" 50
+F1 "cv-control.sch" 50
+F2 "DELAY1_CV_INPUT" I L 3650 8400 50 
+F3 "DELAY1_CV_ATTV" I L 3650 8200 50 
+F4 "DELAY1_CONTROL" I L 3650 8100 50 
+F5 "DELAY1_CV_JOIN_OUT" I L 3650 8000 50 
+F6 "DELAY1_TIME_VOLTAGE" I R 6650 8100 50 
+F7 "+VCC" I R 6650 9700 50 
+F8 "DELAY2_CV_INPUT1" I L 3650 9150 50 
+F9 "DELAY2_CV_INPUT2" I L 3650 9250 50 
+F10 "DELAY2_CV_CTRL" I L 3650 9050 50 
+F11 "DELAY2_CV_ATTV" I L 3650 8950 50 
+F12 "DELAY2_CONTROL" I L 3650 8850 50 
+F13 "DELAY2_TIME_VOLTAGE" I R 6650 8200 50 
+F14 "-VCC" I R 6650 9900 50 
+F15 "GND" I R 6650 9800 50 
+F16 "DELAY1_CV_CTRL" I L 3650 8300 50 
+$EndSheet
+$Comp
+L Connector:Conn_01x06_Male J38
+U 1 1 64CC17D3
+P 3050 9050
+F 0 "J38" H 3200 9350 50  0000 R CNN
+F 1 "Delay2_CV" V 3000 9200 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 3050 9050 50  0001 C CNN
+F 3 "~" H 3050 9050 50  0001 C CNN
+	1    3050 9050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Female J39
+U 1 1 64D00643
+P 3300 9050
+F 0 "J39" H 3300 9350 50  0000 C CNN
+F 1 "Delay2_CV" V 3350 9000 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 3300 9050 50  0001 C CNN
+F 3 "~" H 3300 9050 50  0001 C CNN
+	1    3300 9050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 9700 7200 9700
+Wire Wire Line
+	6650 9800 7000 9800
+Wire Wire Line
+	6650 9900 7100 9900
+Wire Wire Line
+	7100 9900 7100 10550
+Wire Wire Line
+	3000 10550 7100 10550
+Connection ~ 7100 9900
+Wire Wire Line
+	7100 9900 7200 9900
+Connection ~ 3050 10450
+Wire Wire Line
+	7000 10450 7000 9800
+Wire Wire Line
+	3050 10450 7000 10450
+Connection ~ 7000 9800
+Wire Wire Line
+	7000 9800 7200 9800
+Wire Wire Line
+	3500 9250 3650 9250
+Wire Wire Line
+	2850 9250 2650 9250
+$Comp
+L Connector:Conn_01x06_Male J11
+U 1 1 64E4B11A
+P 3050 8200
+F 0 "J11" H 3200 8500 50  0000 R CNN
+F 1 "Delay1_CV" V 3000 8350 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 3050 8200 50  0001 C CNN
+F 3 "~" H 3050 8200 50  0001 C CNN
+	1    3050 8200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Female J12
+U 1 1 64E4BCB4
+P 3300 8200
+F 0 "J12" H 3300 8500 50  0000 C CNN
+F 1 "Delay1_CV" V 3350 8150 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 3300 8200 50  0001 C CNN
+F 3 "~" H 3300 8200 50  0001 C CNN
+	1    3300 8200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 8400 2650 8400
+Wire Wire Line
+	3500 8400 3650 8400
+Text Label 3600 9700 3    50   ~ 0
+MID_0V
+Wire Wire Line
+	3500 8500 3600 8500
+Wire Wire Line
+	3600 8500 3600 9350
+Wire Wire Line
+	3500 9350 3600 9350
+Connection ~ 3600 9350
+Wire Wire Line
+	3600 9350 3600 9700
+Text Label 2750 9600 3    50   ~ 0
+TOP_0V
+Wire Wire Line
+	2750 9600 2750 9350
+Wire Wire Line
+	2750 8500 2850 8500
+Wire Wire Line
+	2850 9350 2750 9350
+Connection ~ 2750 9350
+Wire Wire Line
+	2750 9350 2750 8500
+$Comp
+L Connector:Conn_01x06_Female J6
+U 1 1 6192A73E
+P 4100 4150
+F 0 "J6" H 4100 4450 50  0000 C CNN
+F 1 "DelayAudio" V 4150 4100 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 4100 4150 50  0001 C CNN
+F 3 "~" H 4100 4150 50  0001 C CNN
+	1    4100 4150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4150 4900 4150
+Wire Wire Line
+	4300 4350 4800 4350
+Wire Wire Line
+	4300 4450 4750 4450
+Wire Wire Line
+	4800 4350 4800 4550
+Wire Wire Line
+	4750 4450 4750 4700
+Wire Wire Line
+	4300 3950 4700 3950
+Wire Wire Line
+	4700 3950 4700 6050
+Wire Wire Line
+	4300 4250 4650 4250
+Wire Wire Line
+	4650 4250 4650 6100
+$Comp
+L Connector:Conn_01x06_Male J2
+U 1 1 619D8EF7
+P 3500 4150
+F 0 "J2" H 3650 4450 50  0000 R CNN
+F 1 "DelayAudio" V 3450 4300 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 3500 4150 50  0001 C CNN
+F 3 "~" H 3500 4150 50  0001 C CNN
+	1    3500 4150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 4050 3300 4050
+Wire Wire Line
+	3100 3950 3300 3950
+Wire Wire Line
+	3100 4350 3300 4350
+Wire Wire Line
+	3100 4450 3300 4450
+Wire Wire Line
+	4300 4050 4900 4050
+$Sheet
+S 4900 3050 1700 1250
+U 62AB7D6F
+F0 "OutputMix" 50
+F1 "outputmix.sch" 50
+F2 "DELAY_MIX" I L 4900 3350 50 
+F3 "MIX_OUT" I L 4900 3250 50 
+F4 "+V" I R 6600 3800 50 
+F5 "0V" I R 6600 3900 50 
+F6 "-V" I R 6600 4000 50 
+F7 "DRY_AUDIO_INPUT" I L 4900 3150 50 
+F8 "DELAY2_WET_LEVEL" I L 4900 4150 50 
+F9 "DELAY1_WET_LEVEL" I L 4900 4050 50 
+$EndSheet
+Wire Wire Line
+	12550 3550 12700 3550
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 61792E96
+P 9650 1600
+F 0 "H1" V 9887 1603 50  0000 C CNN
+F 1 "MountingHole_Pad" V 9796 1603 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 9650 1600 50  0001 C CNN
+F 3 "~" H 9650 1600 50  0001 C CNN
+	1    9650 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 61793800
+P 10400 1600
+F 0 "H3" V 10637 1603 50  0000 C CNN
+F 1 "MountingHole_Pad" V 10546 1603 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 10400 1600 50  0001 C CNN
+F 3 "~" H 10400 1600 50  0001 C CNN
+	1    10400 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 61793B92
+P 10400 1950
+F 0 "H4" V 10637 1953 50  0000 C CNN
+F 1 "MountingHole_Pad" V 10546 1953 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 10400 1950 50  0001 C CNN
+F 3 "~" H 10400 1950 50  0001 C CNN
+	1    10400 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 61793EC5
+P 9650 1950
+F 0 "H2" V 9887 1953 50  0000 C CNN
+F 1 "MountingHole_Pad" V 9796 1953 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 9650 1950 50  0001 C CNN
+F 3 "~" H 9650 1950 50  0001 C CNN
+	1    9650 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H5
+U 1 1 61794328
+P 11150 1600
+F 0 "H5" V 11387 1603 50  0000 C CNN
+F 1 "MountingHole_Pad" V 11296 1603 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 11150 1600 50  0001 C CNN
+F 3 "~" H 11150 1600 50  0001 C CNN
+	1    11150 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H6
+U 1 1 61794648
+P 11150 1950
+F 0 "H6" V 11387 1953 50  0000 C CNN
+F 1 "MountingHole_Pad" V 11296 1953 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 11150 1950 50  0001 C CNN
+F 3 "~" H 11150 1950 50  0001 C CNN
+	1    11150 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 6180D38B
+P 11300 2250
+F 0 "#PWR0101" H 11300 2000 50  0001 C CNN
+F 1 "GND" H 11305 2077 50  0000 C CNN
+F 2 "" H 11300 2250 50  0001 C CNN
+F 3 "" H 11300 2250 50  0001 C CNN
+	1    11300 2250
+	1    0    0    -1  
+$EndComp
+Text Label 10550 2250 3    50   ~ 0
+MID_0V
+Text Label 9800 2250 3    50   ~ 0
+TOP_0V
+Wire Wire Line
+	9800 2250 9800 1950
+Wire Wire Line
+	9800 1600 9750 1600
+Wire Wire Line
+	9750 1950 9800 1950
+Connection ~ 9800 1950
+Wire Wire Line
+	9800 1950 9800 1600
+Wire Wire Line
+	10550 2250 10550 1950
+Wire Wire Line
+	10550 1600 10500 1600
+Wire Wire Line
+	10500 1950 10550 1950
+Connection ~ 10550 1950
+Wire Wire Line
+	10550 1950 10550 1600
+Wire Wire Line
+	11300 2250 11300 1950
+Wire Wire Line
+	11300 1600 11250 1600
+Wire Wire Line
+	11250 1950 11300 1950
+Connection ~ 11300 1950
+Wire Wire Line
+	11300 1950 11300 1600
 $EndSCHEMATC

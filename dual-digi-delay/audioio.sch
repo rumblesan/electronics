@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 10
-Title ""
+Sheet 7 10
+Title "Dual PT2399 Digi Delay"
 Date ""
-Rev ""
+Rev "r01"
 Comp ""
 Comment1 ""
 Comment2 ""
