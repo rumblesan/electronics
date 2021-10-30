@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 10
+Sheet 9 10
 Title ""
 Date ""
 Rev ""
@@ -250,7 +250,7 @@ P 6650 5150
 AR Path="/642A547E" Ref="R?"  Part="1" 
 AR Path="/642384B2/642A547E" Ref="R42"  Part="1" 
 F 0 "R42" V 6443 5150 50  0000 C CNN
-F 1 "47k" V 6534 5150 50  0000 C CNN
+F 1 "100k" V 6534 5150 50  0000 C CNN
 F 2 "rumblesan-footprints:Resistor_THT_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6580 5150 50  0001 C CNN
 F 3 "~" H 6650 5150 50  0001 C CNN
 	1    6650 5150
@@ -320,8 +320,8 @@ U 1 1 642A54A8
 P 9000 2900
 AR Path="/642A54A8" Ref="U?"  Part="1" 
 AR Path="/642384B2/642A54A8" Ref="U5"  Part="1" 
-F 0 "U5" H 9000 2533 50  0000 C CNN
-F 1 "TL074" H 9000 2624 50  0000 C CNN
+F 0 "U5" H 9000 3200 50  0000 C CNN
+F 1 "TL074" H 9000 3100 50  0000 C CNN
 F 2 "rumblesan-footprints:DIP-14_W7.62mm_Socket" H 8950 3000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9050 3100 50  0001 C CNN
 	1    9000 2900
@@ -684,7 +684,7 @@ P 5300 4200
 AR Path="/642A55A5" Ref="R?"  Part="1" 
 AR Path="/642384B2/642A55A5" Ref="R43"  Part="1" 
 F 0 "R43" V 5093 4200 50  0000 C CNN
-F 1 "100k" V 5184 4200 50  0000 C CNN
+F 1 "220k" V 5184 4200 50  0000 C CNN
 F 2 "rumblesan-footprints:Resistor_THT_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5230 4200 50  0001 C CNN
 F 3 "~" H 5300 4200 50  0001 C CNN
 	1    5300 4200
@@ -775,7 +775,7 @@ P 5300 1150
 AR Path="/642A55EA" Ref="R?"  Part="1" 
 AR Path="/642384B2/642A55EA" Ref="R37"  Part="1" 
 F 0 "R37" V 5093 1150 50  0000 C CNN
-F 1 "100k" V 5184 1150 50  0000 C CNN
+F 1 "220k" V 5184 1150 50  0000 C CNN
 F 2 "rumblesan-footprints:Resistor_THT_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5230 1150 50  0001 C CNN
 F 3 "~" H 5300 1150 50  0001 C CNN
 	1    5300 1150
@@ -850,8 +850,6 @@ Text Label 8600 3000 2    50   ~ 0
 GND1
 Text Label 7250 2350 2    50   ~ 0
 GND1
-Text Label 6450 900  2    50   ~ 0
-+VCC
 Text Label 4700 3150 3    50   ~ 0
 GND1
 Text Label 10000 1700 0    50   ~ 0
@@ -885,8 +883,6 @@ Text Label 7450 5350 2    50   ~ 0
 GND1
 Text Label 8800 6000 2    50   ~ 0
 GND1
-Text Label 6650 4050 2    50   ~ 0
-+VCC
 Text Label 9450 3850 2    50   ~ 0
 +VCC
 Text Label 10200 4700 0    50   ~ 0
@@ -1413,4 +1409,8 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3450 5250 50  0001 C CNN
 	3    3400 5050
 	1    0    0    1   
 $EndComp
+Text Label 6450 900  2    50   ~ 0
+-VCC
+Text Label 6650 4050 2    50   ~ 0
+-VCC
 $EndSCHEMATC
