@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 10
+Sheet 5 11
 Title ""
 Date ""
 Rev ""
@@ -48,7 +48,7 @@ P 3200 3300
 AR Path="/62BF2200" Ref="R?"  Part="1" 
 AR Path="/62BDC96F/62BF2200" Ref="R9"  Part="1" 
 F 0 "R9" V 2993 3300 50  0000 C CNN
-F 1 "27k" V 3084 3300 50  0000 C CNN
+F 1 "33k" V 3084 3300 50  0000 C CNN
 F 2 "rumblesan-footprints:Resistor_THT_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3130 3300 50  0001 C CNN
 F 3 "~" H 3200 3300 50  0001 C CNN
 	1    3200 3300
@@ -354,4 +354,46 @@ Wire Wire Line
 	6600 1550 6600 1750
 Wire Wire Line
 	6600 2350 6600 2550
+$Comp
+L Device:C C57
+U 1 1 61AD415C
+P 3200 2050
+F 0 "C57" V 2948 2050 50  0000 C CNN
+F 1 "10pF" V 3039 2050 50  0000 C CNN
+F 2 "rumblesan-footprints:C_Rect_L7.0mm_W3.5mm_P5.00mm" H 3238 1900 50  0001 C CNN
+F 3 "~" H 3200 2050 50  0001 C CNN
+	1    3200 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3350 2050 3650 2050
+Wire Wire Line
+	3650 2050 3650 2500
+Connection ~ 3650 2500
+Wire Wire Line
+	3050 2050 2750 2050
+Wire Wire Line
+	2750 2050 2750 2500
+Connection ~ 2750 2500
+$Comp
+L Device:C C58
+U 1 1 61ADB1FE
+P 5450 3000
+F 0 "C58" V 5198 3000 50  0000 C CNN
+F 1 "10pF" V 5289 3000 50  0000 C CNN
+F 2 "rumblesan-footprints:C_Rect_L7.0mm_W3.5mm_P5.00mm" H 5488 2850 50  0001 C CNN
+F 3 "~" H 5450 3000 50  0001 C CNN
+	1    5450 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 3150 5050 3000
+Wire Wire Line
+	5050 3000 5300 3000
+Connection ~ 5050 3150
+Wire Wire Line
+	5600 3000 5850 3000
+Wire Wire Line
+	5850 3000 5850 3400
+Connection ~ 5850 3400
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 10
+Sheet 7 11
 Title ""
 Date ""
 Rev ""
@@ -19,7 +19,7 @@ L Device:R R58
 U 1 1 62227966
 P 3450 2800
 F 0 "R58" H 3380 2754 50  0000 R CNN
-F 1 "27k" H 3380 2845 50  0000 R CNN
+F 1 "15k" H 3380 2845 50  0000 R CNN
 F 2 "rumblesan-footprints:Resistor_THT_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3380 2800 50  0001 C CNN
 F 3 "~" H 3450 2800 50  0001 C CNN
 	1    3450 2800
@@ -64,7 +64,7 @@ L Device:R R59
 U 1 1 6222797F
 P 3750 2100
 F 0 "R59" V 3650 2100 50  0000 C CNN
-F 1 "82k" V 3866 2100 50  0000 C CNN
+F 1 "100k" V 3866 2100 50  0000 C CNN
 F 2 "rumblesan-footprints:Resistor_THT_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3680 2100 50  0001 C CNN
 F 3 "~" H 3750 2100 50  0001 C CNN
 	1    3750 2100
@@ -91,7 +91,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3800 1700 50  0001 C CNN
 	1    3800 1700
 	1    0    0    -1  
 $EndComp
-Text HLabel 3350 1600 0    50   Input ~ 0
+Text HLabel 6300 1600 0    50   Input ~ 0
 DELAY1_WET
 $Comp
 L Amplifier_Operational:TL072 U?
@@ -181,7 +181,7 @@ Wire Wire Line
 	4300 5650 4450 5650
 Wire Wire Line
 	4450 5750 4300 5750
-Text HLabel 4750 1700 2    50   Input ~ 0
+Text HLabel 7700 1700 2    50   Input ~ 0
 DELAY1_WET_OUT
 $Comp
 L Device:R R63
@@ -214,13 +214,13 @@ F 3 "~" H 7400 1700 50  0001 C CNN
 	1    7400 1700
 	0    1    -1   0   
 $EndComp
-Text HLabel 7700 1700 2    50   Input ~ 0
+Text HLabel 4750 1700 2    50   Input ~ 0
 DELAY2_WET_OUT
 Text Label 4250 4050 2    50   ~ 0
 +VCC
 Text Label 6400 3100 3    50   ~ 0
 GND1
-Text HLabel 6300 1600 0    50   Input ~ 0
+Text HLabel 3350 1600 0    50   Input ~ 0
 DELAY2_WET
 Wire Wire Line
 	6300 1600 6450 1600
@@ -235,7 +235,7 @@ P 6700 2100
 AR Path="/62263431" Ref="R?"  Part="1" 
 AR Path="/621CDCC0/62263431" Ref="R57"  Part="1" 
 F 0 "R57" V 6907 2100 50  0000 C CNN
-F 1 "82k" V 6816 2100 50  0000 C CNN
+F 1 "100k" V 6816 2100 50  0000 C CNN
 F 2 "rumblesan-footprints:Resistor_THT_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6630 2100 50  0001 C CNN
 F 3 "~" H 6700 2100 50  0001 C CNN
 	1    6700 2100
@@ -286,7 +286,7 @@ P 6400 2800
 AR Path="/62263411" Ref="R?"  Part="1" 
 AR Path="/621CDCC0/62263411" Ref="R56"  Part="1" 
 F 0 "R56" H 6330 2754 50  0000 R CNN
-F 1 "27k" H 6330 2845 50  0000 R CNN
+F 1 "15k" H 6330 2845 50  0000 R CNN
 F 2 "rumblesan-footprints:Resistor_THT_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6330 2800 50  0001 C CNN
 F 3 "~" H 6400 2800 50  0001 C CNN
 	1    6400 2800

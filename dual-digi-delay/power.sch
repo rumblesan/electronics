@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 10
+Sheet 4 11
 Title ""
 Date ""
 Rev ""
@@ -21,61 +21,35 @@ AR Path="/618D0CB2" Ref="U?"  Part="1"
 AR Path="/618C5F1E/618D0CB2" Ref="U7"  Part="1" 
 F 0 "U7" H 4050 3292 50  0000 C CNN
 F 1 "LM7805_TO220" H 4050 3201 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4050 3275 50  0001 C CIN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 4050 3275 50  0001 C CIN
 F 3 "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF" H 4050 3000 50  0001 C CNN
 	1    4050 3050
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C?
-U 1 1 618D0CB8
-P 4600 3300
-AR Path="/618D0CB8" Ref="C?"  Part="1" 
-AR Path="/618C5F1E/618D0CB8" Ref="C50"  Part="1" 
-F 0 "C50" H 4718 3346 50  0000 L CNN
-F 1 "10uF" H 4718 3255 50  0000 L CNN
-F 2 "rumblesan-footprints:CP_Radial_D6.3mm_P2.50mm" H 4638 3150 50  0001 C CNN
-F 3 "~" H 4600 3300 50  0001 C CNN
-	1    4600 3300
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C?
 U 1 1 618D0CBE
-P 5000 3300
+P 4600 3300
 AR Path="/618D0CBE" Ref="C?"  Part="1" 
 AR Path="/618C5F1E/618D0CBE" Ref="C51"  Part="1" 
-F 0 "C51" H 4885 3254 50  0000 R CNN
-F 1 "100nF" H 4885 3345 50  0000 R CNN
-F 2 "rumblesan-footprints:C_Rect_L7.0mm_W3.5mm_P5.00mm" H 5038 3150 50  0001 C CNN
-F 3 "~" H 5000 3300 50  0001 C CNN
-	1    5000 3300
+F 0 "C51" H 4485 3254 50  0000 R CNN
+F 1 "100nF" H 4485 3345 50  0000 R CNN
+F 2 "rumblesan-footprints:C_Rect_L7.0mm_W3.5mm_P5.00mm" H 4638 3150 50  0001 C CNN
+F 3 "~" H 4600 3300 50  0001 C CNN
+	1    4600 3300
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	4350 3050 4600 3050
 Wire Wire Line
-	5000 3050 5000 3150
-Wire Wire Line
 	4600 3150 4600 3050
-Connection ~ 4600 3050
-Wire Wire Line
-	4600 3050 5000 3050
-Wire Wire Line
-	5000 3550 5000 3450
 Wire Wire Line
 	4600 3450 4600 3550
-Connection ~ 4600 3550
-Wire Wire Line
-	4600 3550 5000 3550
 Wire Wire Line
 	4050 3350 4050 3550
 Connection ~ 4050 3550
 Wire Wire Line
 	4050 3550 4600 3550
-Wire Wire Line
-	5000 3050 5100 3050
-Connection ~ 5000 3050
 Connection ~ 3500 3050
 Wire Wire Line
 	3500 3050 3350 3050
@@ -177,7 +151,7 @@ Text Label 4000 1500 2    50   ~ 0
 0V
 Text Label 4000 2000 2    50   ~ 0
 -V
-Text Label 5100 3050 0    50   ~ 0
+Text Label 4850 3050 0    50   ~ 0
 +5V
 Text Label 3350 3050 2    50   ~ 0
 +V
@@ -227,4 +201,7 @@ Wire Wire Line
 Connection ~ 4250 1500
 Wire Wire Line
 	4250 1500 4250 1600
+Wire Wire Line
+	4600 3050 4850 3050
+Connection ~ 4600 3050
 $EndSCHEMATC

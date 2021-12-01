@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 10
+Sheet 11 11
 Title ""
 Date ""
 Rev ""
@@ -22,7 +22,7 @@ P 4700 4400
 AR Path="/62AEDF6D" Ref="R?"  Part="1" 
 AR Path="/62AB7D6F/62AEDF6D" Ref="R4"  Part="1" 
 F 0 "R4" V 4493 4400 50  0000 C CNN
-F 1 "27k" V 4584 4400 50  0000 C CNN
+F 1 "15k" V 4584 4400 50  0000 C CNN
 F 2 "rumblesan-footprints:Resistor_THT_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4630 4400 50  0001 C CNN
 F 3 "~" H 4700 4400 50  0001 C CNN
 	1    4700 4400
@@ -235,7 +235,7 @@ P 2900 3350
 AR Path="/62AEDFF4" Ref="R?"  Part="1" 
 AR Path="/62AB7D6F/62AEDFF4" Ref="R1"  Part="1" 
 F 0 "R1" V 2693 3350 50  0000 C CNN
-F 1 "100k" V 2784 3350 50  0000 C CNN
+F 1 "47k" V 2784 3350 50  0000 C CNN
 F 2 "rumblesan-footprints:Resistor_THT_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2830 3350 50  0001 C CNN
 F 3 "~" H 2900 3350 50  0001 C CNN
 	1    2900 3350
@@ -248,7 +248,7 @@ P 2900 4300
 AR Path="/62AEDFFA" Ref="R?"  Part="1" 
 AR Path="/62AB7D6F/62AEDFFA" Ref="R2"  Part="1" 
 F 0 "R2" V 2693 4300 50  0000 C CNN
-F 1 "100k" V 2784 4300 50  0000 C CNN
+F 1 "47k" V 2784 4300 50  0000 C CNN
 F 2 "rumblesan-footprints:Resistor_THT_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2830 4300 50  0001 C CNN
 F 3 "~" H 2900 4300 50  0001 C CNN
 	1    2900 4300
@@ -277,7 +277,7 @@ P 5150 3150
 AR Path="/62AEDF96" Ref="R?"  Part="1" 
 AR Path="/62AB7D6F/62AEDF96" Ref="R5"  Part="1" 
 F 0 "R5" V 4943 3150 50  0000 C CNN
-F 1 "27k" V 5034 3150 50  0000 C CNN
+F 1 "15k" V 5034 3150 50  0000 C CNN
 F 2 "rumblesan-footprints:Resistor_THT_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5080 3150 50  0001 C CNN
 F 3 "~" H 5150 3150 50  0001 C CNN
 	1    5150 3150
@@ -317,93 +317,98 @@ Text Label 3250 4500 2    50   ~ 0
 $Comp
 L Device:C C?
 U 1 1 62BCD8B9
-P 6750 2600
+P 5500 1250
 AR Path="/62BCD8B9" Ref="C?"  Part="1" 
 AR Path="/62AB7D6F/62BCD8B9" Ref="C2"  Part="1" 
-F 0 "C2" H 6635 2554 50  0000 R CNN
-F 1 "100nF" H 6635 2645 50  0000 R CNN
-F 2 "rumblesan-footprints:C_Rect_L7.0mm_W3.5mm_P5.00mm" H 6788 2450 50  0001 C CNN
-F 3 "~" H 6750 2600 50  0001 C CNN
-	1    6750 2600
+F 0 "C2" H 5385 1204 50  0000 R CNN
+F 1 "100nF" H 5385 1295 50  0000 R CNN
+F 2 "rumblesan-footprints:C_Rect_L7.0mm_W3.5mm_P5.00mm" H 5538 1100 50  0001 C CNN
+F 3 "~" H 5500 1250 50  0001 C CNN
+	1    5500 1250
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6750 2350 6750 2450
+	5500 1000 5500 1100
 Wire Wire Line
-	6750 2850 6750 2750
-Connection ~ 6750 2850
+	5500 1500 5500 1400
+Connection ~ 5500 1500
 $Comp
 L Device:C C?
 U 1 1 62BCD8C2
-P 6750 3100
+P 5500 1750
 AR Path="/62BCD8C2" Ref="C?"  Part="1" 
 AR Path="/62AB7D6F/62BCD8C2" Ref="C3"  Part="1" 
-F 0 "C3" H 6635 3054 50  0000 R CNN
-F 1 "100nF" H 6635 3145 50  0000 R CNN
-F 2 "rumblesan-footprints:C_Rect_L7.0mm_W3.5mm_P5.00mm" H 6788 2950 50  0001 C CNN
-F 3 "~" H 6750 3100 50  0001 C CNN
-	1    6750 3100
+F 0 "C3" H 5385 1704 50  0000 R CNN
+F 1 "100nF" H 5385 1795 50  0000 R CNN
+F 2 "rumblesan-footprints:C_Rect_L7.0mm_W3.5mm_P5.00mm" H 5538 1600 50  0001 C CNN
+F 3 "~" H 5500 1750 50  0001 C CNN
+	1    5500 1750
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6750 2950 6750 2850
+	5500 1600 5500 1500
 Wire Wire Line
-	6750 3350 6750 3250
+	5500 2000 5500 1900
 Wire Wire Line
-	6550 2350 6750 2350
+	5300 1000 5500 1000
 Wire Wire Line
-	6550 3350 6750 3350
+	5300 2000 5500 2000
 Wire Wire Line
-	6500 2850 6750 2850
+	5250 1500 5500 1500
 $Comp
 L Amplifier_Operational:TL072 U?
 U 3 1 62BCD8E2
-P 7350 2850
+P 6100 1500
 AR Path="/62BCD8E2" Ref="U?"  Part="3" 
 AR Path="/62AB7D6F/62BCD8E2" Ref="U1"  Part="3" 
-F 0 "U1" H 7308 2896 50  0000 L CNN
-F 1 "TL072" H 7308 2805 50  0000 L CNN
-F 2 "rumblesan-footprints:DIP-8_W7.62mm_Socket" H 7350 2850 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 7350 2850 50  0001 C CNN
-	3    7350 2850
+F 0 "U1" H 6058 1546 50  0000 L CNN
+F 1 "TL072" H 6058 1455 50  0000 L CNN
+F 2 "rumblesan-footprints:DIP-8_W7.62mm_Socket" H 6100 1500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6100 1500 50  0001 C CNN
+	3    6100 1500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6750 2350 7250 2350
+	5500 1000 6000 1000
 Wire Wire Line
-	7250 2350 7250 2550
-Connection ~ 6750 2350
+	6000 1000 6000 1200
+Connection ~ 5500 1000
 Wire Wire Line
-	6750 3350 7250 3350
+	5500 2000 6000 2000
 Wire Wire Line
-	7250 3150 7250 3350
-Connection ~ 6750 3350
-Text Label 6500 2850 2    50   ~ 0
-0V
-Text Label 6550 2350 2    50   ~ 0
+	6000 1800 6000 2000
+Connection ~ 5500 2000
+Text HLabel 5300 1000 0    50   Input ~ 0
 +V
-Text Label 6550 3350 2    50   ~ 0
--V
-Text HLabel 3150 5450 0    50   Input ~ 0
-+V
-Text HLabel 3150 5550 0    50   Input ~ 0
+Text HLabel 5250 1500 0    50   Input ~ 0
 0V
-Text HLabel 3150 5650 0    50   Input ~ 0
+Text HLabel 5300 2000 0    50   Input ~ 0
 -V
-Text Label 3300 5550 0    50   ~ 0
-0V
-Text Label 3300 5450 0    50   ~ 0
-+V
-Text Label 3300 5650 0    50   ~ 0
--V
-Wire Wire Line
-	3150 5450 3300 5450
-Wire Wire Line
-	3150 5550 3300 5550
-Wire Wire Line
-	3300 5650 3150 5650
 Wire Wire Line
 	5150 2900 5150 3000
 Wire Wire Line
 	5150 3300 5150 3500
+$Comp
+L Device:C C?
+U 1 1 61AD7078
+P 3650 2700
+AR Path="/61AD7078" Ref="C?"  Part="1" 
+AR Path="/62AB7D6F/61AD7078" Ref="C59"  Part="1" 
+F 0 "C59" V 3398 2700 50  0000 C CNN
+F 1 "10pF" V 3489 2700 50  0000 C CNN
+F 2 "rumblesan-footprints:C_Rect_L7.0mm_W3.5mm_P5.00mm" H 3688 2550 50  0001 C CNN
+F 3 "~" H 3650 2700 50  0001 C CNN
+	1    3650 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3500 2700 3200 2700
+Wire Wire Line
+	3200 2700 3200 3150
+Connection ~ 3200 3150
+Wire Wire Line
+	3800 2700 4100 2700
+Wire Wire Line
+	4100 2700 4100 3150
+Connection ~ 4100 3150
 $EndSCHEMATC

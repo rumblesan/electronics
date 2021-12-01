@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 10
+Sheet 8 11
 Title ""
 Date ""
 Rev ""
@@ -83,20 +83,20 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 642A5416
-P 7000 4050
+P 7000 4000
 AR Path="/642A5416" Ref="R?"  Part="1" 
 AR Path="/642384B2/642A5416" Ref="R44"  Part="1" 
-F 0 "R44" V 6793 4050 50  0000 C CNN
-F 1 "220k" V 6884 4050 50  0000 C CNN
-F 2 "rumblesan-footprints:Resistor_THT_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6930 4050 50  0001 C CNN
-F 3 "~" H 7000 4050 50  0001 C CNN
-	1    7000 4050
+F 0 "R44" V 6793 4000 50  0000 C CNN
+F 1 "150k" V 6884 4000 50  0000 C CNN
+F 2 "rumblesan-footprints:Resistor_THT_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6930 4000 50  0001 C CNN
+F 3 "~" H 7000 4000 50  0001 C CNN
+	1    7000 4000
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7150 4050 7450 4050
+	7150 4000 7450 4000
 Wire Wire Line
-	6650 4050 6850 4050
+	6650 4000 6850 4000
 Wire Wire Line
 	7450 5150 7450 4750
 Wire Wire Line
@@ -118,8 +118,6 @@ Wire Wire Line
 	7650 4750 7450 4750
 Connection ~ 7450 4750
 Wire Wire Line
-	7450 4750 7450 4350
-Wire Wire Line
 	7950 4350 8350 4350
 Wire Wire Line
 	8350 4350 8350 4700
@@ -131,7 +129,7 @@ AR Path="/642A542F" Ref="Q?"  Part="1"
 AR Path="/642384B2/642A542F" Ref="Q5"  Part="1" 
 F 0 "Q5" H 9650 4550 50  0000 L CNN
 F 1 "2N3904" H 9550 4900 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 10050 4625 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 10050 4625 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 9850 4700 50  0001 L CNN
 	1    9850 4700
 	-1   0    0    -1  
@@ -228,12 +226,10 @@ Wire Wire Line
 	10150 4300 10300 4300
 Connection ~ 5600 4600
 Wire Wire Line
-	5850 4200 5600 4200
+	5850 4100 5600 4100
 Connection ~ 6400 4600
 Wire Wire Line
-	6400 4200 6150 4200
-Wire Wire Line
-	6400 4600 6400 4200
+	6400 4100 6150 4100
 Wire Wire Line
 	6400 5150 6500 5150
 Connection ~ 6400 5150
@@ -250,7 +246,7 @@ P 6650 5150
 AR Path="/642A547E" Ref="R?"  Part="1" 
 AR Path="/642384B2/642A547E" Ref="R42"  Part="1" 
 F 0 "R42" V 6443 5150 50  0000 C CNN
-F 1 "100k" V 6534 5150 50  0000 C CNN
+F 1 "56k" V 6534 5150 50  0000 C CNN
 F 2 "rumblesan-footprints:Resistor_THT_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6580 5150 50  0001 C CNN
 F 3 "~" H 6650 5150 50  0001 C CNN
 	1    6650 5150
@@ -259,14 +255,14 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 642A5484
-P 6000 4200
+P 6000 4100
 AR Path="/642A5484" Ref="C?"  Part="1" 
 AR Path="/642384B2/642A5484" Ref="C41"  Part="1" 
-F 0 "C41" V 5748 4200 50  0000 C CNN
-F 1 "10pF" V 5839 4200 50  0000 C CNN
-F 2 "rumblesan-footprints:C_Rect_L7.0mm_W3.5mm_P5.00mm" H 6038 4050 50  0001 C CNN
-F 3 "~" H 6000 4200 50  0001 C CNN
-	1    6000 4200
+F 0 "C41" V 5748 4100 50  0000 C CNN
+F 1 "10pF" V 5839 4100 50  0000 C CNN
+F 2 "rumblesan-footprints:C_Rect_L7.0mm_W3.5mm_P5.00mm" H 6038 3950 50  0001 C CNN
+F 3 "~" H 6000 4100 50  0001 C CNN
+	1    6000 4100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -402,7 +398,7 @@ AR Path="/642A54EC" Ref="Q?"  Part="1"
 AR Path="/642384B2/642A54EC" Ref="Q6"  Part="1" 
 F 0 "Q6" H 9450 1550 50  0000 L CNN
 F 1 "2N3904" H 9350 1900 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9850 1625 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 9850 1625 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 9650 1700 50  0001 L CNN
 	1    9650 1700
 	-1   0    0    -1  
@@ -415,7 +411,7 @@ AR Path="/642A54F2" Ref="Q?"  Part="1"
 AR Path="/642384B2/642A54F2" Ref="Q4"  Part="1" 
 F 0 "Q4" H 8950 1550 50  0000 L CNN
 F 1 "2N3904" H 8750 1900 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9350 1625 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 9350 1625 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 9150 1700 50  0001 L CNN
 	1    9150 1700
 	1    0    0    -1  
@@ -639,7 +635,7 @@ P 6900 2150
 AR Path="/642A558B" Ref="R?"  Part="1" 
 AR Path="/642384B2/642A558B" Ref="R45"  Part="1" 
 F 0 "R45" V 6693 2150 50  0000 C CNN
-F 1 "100k" V 6784 2150 50  0000 C CNN
+F 1 "56k" V 6784 2150 50  0000 C CNN
 F 2 "rumblesan-footprints:Resistor_THT_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6830 2150 50  0001 C CNN
 F 3 "~" H 6900 2150 50  0001 C CNN
 	1    6900 2150
@@ -680,18 +676,18 @@ Wire Wire Line
 $Comp
 L Device:R R?
 U 1 1 642A55A5
-P 5300 4200
+P 5300 4100
 AR Path="/642A55A5" Ref="R?"  Part="1" 
 AR Path="/642384B2/642A55A5" Ref="R43"  Part="1" 
-F 0 "R43" V 5093 4200 50  0000 C CNN
-F 1 "220k" V 5184 4200 50  0000 C CNN
-F 2 "rumblesan-footprints:Resistor_THT_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5230 4200 50  0001 C CNN
-F 3 "~" H 5300 4200 50  0001 C CNN
-	1    5300 4200
+F 0 "R43" V 5093 4100 50  0000 C CNN
+F 1 "220k" V 5184 4100 50  0000 C CNN
+F 2 "rumblesan-footprints:Resistor_THT_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5230 4100 50  0001 C CNN
+F 3 "~" H 5300 4100 50  0001 C CNN
+	1    5300 4100
 	0    -1   -1   0   
 $EndComp
 Text Notes 7900 1250 0    50   ~ 0
-Output voltage range:\n-0.15v = short delay\n0.09 = long delay
+Output voltage range:\n-0.16v = short delay\n0.0 = long delay\n0.03 = glitching out
 Wire Wire Line
 	7050 2150 7250 2150
 Connection ~ 7250 2150
@@ -713,18 +709,18 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 642A55BC
-P 2350 4550
+P 2350 4950
 AR Path="/642A55BC" Ref="R?"  Part="1" 
 AR Path="/642384B2/642A55BC" Ref="R31"  Part="1" 
-F 0 "R31" V 2143 4550 50  0000 C CNN
-F 1 "100k" V 2234 4550 50  0000 C CNN
-F 2 "rumblesan-footprints:Resistor_THT_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2280 4550 50  0001 C CNN
-F 3 "~" H 2350 4550 50  0001 C CNN
-	1    2350 4550
+F 0 "R31" V 2143 4950 50  0000 C CNN
+F 1 "100k" V 2234 4950 50  0000 C CNN
+F 2 "rumblesan-footprints:Resistor_THT_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2280 4950 50  0001 C CNN
+F 3 "~" H 2350 4950 50  0001 C CNN
+	1    2350 4950
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	2050 4550 2200 4550
+	2050 4950 2200 4950
 Wire Wire Line
 	3000 4950 3000 4550
 Wire Wire Line
@@ -740,25 +736,12 @@ Wire Wire Line
 Connection ~ 3800 5050
 $Comp
 L Device:R R?
-U 1 1 642A55CC
-P 2350 4950
-AR Path="/642A55CC" Ref="R?"  Part="1" 
-AR Path="/642384B2/642A55CC" Ref="R32"  Part="1" 
-F 0 "R32" V 2143 4950 50  0000 C CNN
-F 1 "100k" V 2234 4950 50  0000 C CNN
-F 2 "rumblesan-footprints:Resistor_THT_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2280 4950 50  0001 C CNN
-F 3 "~" H 2350 4950 50  0001 C CNN
-	1    2350 4950
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:R R?
 U 1 1 642A55DA
 P 6800 900
 AR Path="/642A55DA" Ref="R?"  Part="1" 
 AR Path="/642384B2/642A55DA" Ref="R39"  Part="1" 
 F 0 "R39" V 6593 900 50  0000 C CNN
-F 1 "220k" V 6684 900 50  0000 C CNN
+F 1 "150k" V 6684 900 50  0000 C CNN
 F 2 "rumblesan-footprints:Resistor_THT_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6730 900 50  0001 C CNN
 F 3 "~" H 6800 900 50  0001 C CNN
 	1    6800 900 
@@ -795,8 +778,6 @@ Wire Wire Line
 Wire Wire Line
 	4650 6000 4650 6150
 Wire Wire Line
-	2200 4950 2050 4950
-Wire Wire Line
 	8600 2550 8600 1350
 Wire Wire Line
 	8600 2800 8600 2550
@@ -820,7 +801,7 @@ AR Path="/642A5435" Ref="Q?"  Part="1"
 AR Path="/642384B2/642A5435" Ref="Q3"  Part="1" 
 F 0 "Q3" H 9150 4550 50  0000 L CNN
 F 1 "2N3904" H 9000 4850 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9550 4625 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 9550 4625 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 9350 4700 50  0001 L CNN
 	1    9350 4700
 	1    0    0    -1  
@@ -868,8 +849,8 @@ U 4 1 642A55AE
 P 9200 5900
 AR Path="/642A55AE" Ref="U?"  Part="4" 
 AR Path="/642384B2/642A55AE" Ref="U5"  Part="4" 
-F 0 "U5" H 9200 5533 50  0000 C CNN
-F 1 "TL074" H 9200 5624 50  0000 C CNN
+F 0 "U5" H 9200 6200 50  0000 C CNN
+F 1 "TL074" H 9200 6100 50  0000 C CNN
 F 2 "rumblesan-footprints:DIP-14_W7.62mm_Socket" H 9150 6000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9250 6100 50  0001 C CNN
 	4    9200 5900
@@ -877,7 +858,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9250 6100 50  0001 C CNN
 $EndComp
 Text Label 4650 6150 3    50   ~ 0
 GND1
-Text HLabel 4900 4200 0    50   Input ~ 0
+Text HLabel 4900 4100 0    50   Input ~ 0
 DELAY2_CONTROL
 Text Label 7450 5350 2    50   ~ 0
 GND1
@@ -1279,17 +1260,15 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2300 7300 50  0001 C CNN
 	5    2250 7100
 	1    0    0    -1  
 $EndComp
+Text HLabel 6750 3650 0    50   Input ~ 0
+DELAY2_JOIN_CV_INPUT
 Text HLabel 2050 4950 0    50   Input ~ 0
-DELAY2_CV_INPUT2
-Text HLabel 2050 4550 0    50   Input ~ 0
-DELAY2_CV_INPUT1
+DELAY2_CV_INPUT
 Wire Wire Line
-	2500 4950 2700 4950
+	7300 3650 7450 3650
 Connection ~ 2700 4950
 Wire Wire Line
-	2700 4550 2700 4950
-Wire Wire Line
-	2500 4550 2700 4550
+	2500 4950 2700 4950
 Wire Wire Line
 	3800 5050 4200 5050
 Wire Wire Line
@@ -1334,11 +1313,9 @@ Wire Wire Line
 	5150 5050 5600 5050
 Connection ~ 5600 5050
 Wire Wire Line
-	4900 4200 5150 4200
+	4900 4100 5150 4100
 Wire Wire Line
-	5450 4200 5600 4200
-Wire Wire Line
-	7450 4050 7450 4350
+	5450 4100 5600 4100
 Wire Wire Line
 	6800 5150 7450 5150
 Connection ~ 7450 5150
@@ -1348,14 +1325,6 @@ Wire Wire Line
 	5600 1150 5600 1550
 Wire Wire Line
 	7250 900  7250 1350
-Connection ~ 7450 4350
-Connection ~ 5600 4200
-Wire Wire Line
-	5600 4200 5600 4600
-Text Notes 4350 2550 0    50   ~ 0
-POT CW\nPIN 3
-Text Notes 4300 5550 0    50   ~ 0
-POT CW\nPIN 3
 $Comp
 L Device:C C?
 U 1 1 648A112E
@@ -1409,8 +1378,40 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3450 5250 50  0001 C CNN
 	3    3400 5050
 	1    0    0    1   
 $EndComp
+Wire Wire Line
+	6750 3650 7000 3650
+Wire Wire Line
+	6400 4100 6400 4600
 Text Label 6450 900  2    50   ~ 0
--VCC
-Text Label 6650 4050 2    50   ~ 0
--VCC
++VCC
+Text Label 6650 4000 2    50   ~ 0
++VCC
+$Comp
+L Device:R R?
+U 1 1 642A55CC
+P 7150 3650
+AR Path="/642A55CC" Ref="R?"  Part="1" 
+AR Path="/642384B2/642A55CC" Ref="R32"  Part="1" 
+F 0 "R32" V 6943 3650 50  0000 C CNN
+F 1 "56k" V 7034 3650 50  0000 C CNN
+F 2 "rumblesan-footprints:Resistor_THT_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7080 3650 50  0001 C CNN
+F 3 "~" H 7150 3650 50  0001 C CNN
+	1    7150 3650
+	0    -1   1    0   
+$EndComp
+Text Notes 4300 2400 0    50   ~ 0
+pot CW\ninverts
+Text Notes 4300 5400 0    50   ~ 0
+pot CW\ninverts
+Wire Wire Line
+	7450 3650 7450 4000
+Connection ~ 7450 4000
+Wire Wire Line
+	7450 4000 7450 4350
+Connection ~ 7450 4350
+Wire Wire Line
+	7450 4350 7450 4750
+Connection ~ 5600 4100
+Wire Wire Line
+	5600 4100 5600 4600
 $EndSCHEMATC

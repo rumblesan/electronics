@@ -108,13 +108,28 @@ ENDDEF
 #
 DEF BananaJacks_BananaJack_PanelMount J 0 40 N Y 1 F N
 F0 "J" 0 150 50 H V C CNN
-F1 "BananaJacks_BananaJack_PanelMount" 0 -150 50 H I C CNN
+F1 "BananaJacks_BananaJack_PanelMount" 0 225 50 H I C CNN
 F2 "" 0 -300 50 H I C CNN
 F3 "" 0 -300 50 H I C CNN
+F4 "Mouser" 0 375 50 H I C CNN "Vendor"
+F5 "108-0901-1" 0 300 50 H I C CNN "SKU"
+F6 "BananaJack" 0 -150 50 H V C CNN "Note"
 DRAW
 C 0 0 50 0 1 0 N
 C 0 0 112 0 1 0 N
 X ~ 1 200 0 100 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# Board_Hardware_Logo_Ammonite-simple
+#
+DEF Board_Hardware_Logo_Ammonite-simple H 0 0 N N 1 F N
+F0 "H" 0 50 50 H I C CNN
+F1 "Board_Hardware_Logo_Ammonite-simple" -50 -50 50 H V C CNN
+F2 "rumblesan-footprints:Logo_Ammonite-simple_10.4mmx12.0mm" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 0 0 0 1 0 N
 ENDDRAW
 ENDDEF
 #
@@ -155,6 +170,52 @@ P 2 1 1 6 50 -100 34 -100 N
 P 2 1 1 6 50 0 34 0 N
 X Pin_1 1 200 0 150 L 50 50 1 1 P
 X Pin_2 2 200 -100 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Conn_01x03_Female
+#
+DEF Connector_Conn_01x03_Female J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Connector_Conn_01x03_Female" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+A 0 -100 20 901 -901 1 1 6 N 0 -80 0 -120
+A 0 0 20 901 -901 1 1 6 N 0 20 0 -20
+A 0 100 20 901 -901 1 1 6 N 0 120 0 80
+P 2 1 1 6 -50 -100 -20 -100 N
+P 2 1 1 6 -50 0 -20 0 N
+P 2 1 1 6 -50 100 -20 100 N
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Conn_01x03_Male
+#
+DEF Connector_Conn_01x03_Male J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Connector_Conn_01x03_Male" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S 34 -95 0 -105 1 1 6 F
+S 34 5 0 -5 1 1 6 F
+S 34 105 0 95 1 1 6 F
+P 2 1 1 6 50 -100 34 -100 N
+P 2 1 1 6 50 0 34 0 N
+P 2 1 1 6 50 100 34 100 N
+X Pin_1 1 200 100 150 L 50 50 1 1 P
+X Pin_2 2 200 0 150 L 50 50 1 1 P
+X Pin_3 3 200 -100 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -334,23 +395,6 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_Net-Tie_2
-#
-DEF Device_Net-Tie_2 NT 0 0 N N 1 F N
-F0 "NT" 0 50 50 H V C CNN
-F1 "Device_Net-Tie_2" 0 -50 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Net*Tie*
-$ENDFPLIST
-DRAW
-P 2 0 1 10 -50 0 50 0 N
-X 1 1 -100 0 100 R 50 50 1 1 P
-X 2 2 100 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Device_R
 #
 DEF Device_R R 0 0 N Y 1 F N
@@ -401,6 +445,20 @@ $ENDFPLIST
 DRAW
 C 0 50 50 0 1 50 N
 X 1 1 0 -100 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Panelization_MouseBite
+#
+DEF Panelization_MouseBite H 0 40 Y Y 1 F N
+F0 "H" 0 100 50 H V C CNN
+F1 "Panelization_MouseBite" 0 -75 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -50 0 25 0 1 0 N
+C 0 0 25 0 1 0 N
+C 50 0 25 0 1 0 N
 ENDDRAW
 ENDDEF
 #
@@ -532,20 +590,6 @@ F3 "" 0 0 50 H I C CNN
 DRAW
 P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
 X GND 1 0 0 0 D 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_GNDD
-#
-DEF power_GNDD #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power_GNDD" 0 -125 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-S -50 -60 50 -80 0 1 10 F
-P 2 0 1 0 0 0 0 -60 N
-X GNDD 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
