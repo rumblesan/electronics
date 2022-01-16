@@ -1,0 +1,19 @@
+# Rev2 Build Notes
+
+The rev2 board has a couple of small issues that need fixing, and there's a few other things to note during the build.
+
+## Fixes
+
+Pin 5 on U3 needs to be connected to ground. Jumper to pin 3 is easiest.
+One pin on C45 needs to be connected to ground. Jumper to the ground pin on C44 is easiest.
+One pin on C36 needs to be connected to ground. Jumper to the ground pin on C34 is easiest.
+The two protection diodes D15 and D16 don't really do much. Probably not worth putting them in and just making sure you wire things up right.
+
+## Building
+
+All the electrolytic capacitors on the delay board need to lie flat so things fit together. They should have plenty of space to do that.
+The two SPDT switches are sized for part 612-100SP1T1B3M2QEH from Mouser. Others will probably fit, but best to double check.
+Also, the pins from the Join switch may hit the top of U5 when the boards are put together, so best to trim them shorter.
+Has been designed for the Johnson banana jacks, but others will probably work fine.
+The four 10uF capacitors noted as "Audio" are ones that have audio signals passing through, so probably worth getting decent quality ones (or not if you don't think you'll hear the difference)
+The power connector is sized for a Molex KK254 plug, but I tend just to have the power wire soldered directly in with a plug on the other end. Do whatever works for you.
