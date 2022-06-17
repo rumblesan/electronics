@@ -4,6 +4,15 @@
 
   (paper "A4")
 
+  (title_block
+    (title "Damped Integrator")
+    (date "2022-06-17")
+    (rev "r01")
+    (comment 2 "creativecommons.org/Licenses/by/4.0/")
+    (comment 3 "License: CC BY 4.0")
+    (comment 4 "Author: Guy John")
+  )
+
   (lib_symbols
     (symbol "4U_Hardware:4U_Power" (in_bom yes) (on_board yes)
       (property "Reference" "J" (id 0) (at 0 6.985 0)

@@ -6,9 +6,12 @@
 
   (paper "A4")
   (title_block
-    (title "Damped Integrator and extras")
-    (date "2022-05-21")
+    (title "Damped Integrator and Extras")
+    (date "2022-06-17")
     (rev "r01")
+    (comment 2 "creativecommons.org/licenses/by/4.0/")
+    (comment 3 "License: CC BY 4.0")
+    (comment 4 "Author: Guy John")
   )
 
   (layers
@@ -60,7 +63,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "")
+      (outputdirectory "panel-gerbers/")
     )
   )
 
