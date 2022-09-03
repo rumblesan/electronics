@@ -1,0 +1,23 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,(6.0.6-0)*%
+%TF.CreationDate,2022-09-03T01:53:08+01:00*%
+%TF.ProjectId,4u-variable-integrator-panel,34752d76-6172-4696-9162-6c652d696e74,r02*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Soldermask,Bot*%
+%TF.FilePolarity,Negative*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW (6.0.6-0)) date 2022-09-03 01:53:08*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%ADD10O,7.000000X4.000000*%
+G04 APERTURE END LIST*
+D10*
+%TO.C,Ref\u002A\u002A*%
+X94950000Y-24400000D03*
+X69550000Y-193400000D03*
+X69550000Y-24400000D03*
+X94950000Y-193400000D03*
+%TD*%
+M02*
