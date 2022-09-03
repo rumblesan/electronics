@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "4u-simple-integrator-panel")(type "KiCad")(uri "${KIPRJMOD}/4u-simple-integrator-panel.kicad_sym")(options "")(descr ""))
+)
