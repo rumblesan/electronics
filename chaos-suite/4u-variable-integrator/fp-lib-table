@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name "4u-variable-integrator-panel-graphics")(type "KiCad")(uri "${KIPRJMOD}/panel/4u-variable-integrators-panel.pretty")(options "")(descr ""))
-)

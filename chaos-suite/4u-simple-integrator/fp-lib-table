@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name "4u-simple-integrator-panel")(type "KiCad")(uri "${KIPRJMOD}/panel/4u-simple-integrator-panel.pretty")(options "")(descr ""))
-)
